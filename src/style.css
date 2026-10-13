@@ -2051,19 +2051,27 @@ body {
    WHY CHOOSE US / TRUST BANNER
    ========================================================================== */
 .services-trust-banner-section {
-  padding-bottom: clamp(4rem, 6vw, 6rem);
+  padding-top: clamp(3.5rem, 5.5vw, 6rem);
+  padding-bottom: clamp(4.5rem, 6.5vw, 6.5rem);
+}
+
+.services-trust-banner-section .site-container {
+  max-width: 1540px;
+  padding-left: clamp(1rem, 2vw, 2rem);
+  padding-right: clamp(1rem, 2vw, 2rem);
 }
 
 .services-trust-bar {
   background: #FFFFFF;
   border: 1.5px solid #E5E0D5;
-  border-radius: 4px;
-  box-shadow: 0 8px 30px rgba(17, 40, 59, 0.05);
-  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.75rem);
+  border-radius: 6px;
+  box-shadow: 0 10px 35px rgba(17, 40, 59, 0.06);
+  padding: clamp(1.75rem, 2.5vw, 2.5rem) clamp(2rem, 3.5vw, 3.5rem);
   display: flex;
   align-items: center;
-  gap: clamp(1.5rem, 2.5vw, 2.75rem);
+  gap: clamp(1.5rem, 2.8vw, 3.2rem);
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 .trust-script-col {
