@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhombus Contractors | Building Strength. Shaping Tomorrow.</title>
+  <meta name="description" content="Reliable steel and metal solutions for modern construction. Construction material supply, custom fabrication, powder coating, and structural subcontracting.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/images/rhombus-logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="blueprint-grid-bg">
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Left Logo Container on Cream Canvas -->
+      <div class="header-logo-container">
+        <a href="#home" class="brand-link" aria-label="Rhombus Contractors Home">
+          <img src="/images/rhombus_logo_transparent.png" alt="Rhombus Contractors" class="brand-logo-img">
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Bar in Deep Navy - Fills all remaining width to the far right -->
+      <nav class="nav-bar-navy" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="nav-divider"></div>
+          <div class="nav-socials">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+        <li>
+          <button class="open-quote-modal" style="width: 100%; background: var(--color-crimson); color: white; border: none; padding: 0.75rem; font-weight: bold; cursor: pointer; border-radius: 2px;">
+            Request a Quote
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="site-container">
+      <div class="hero-grid">
+        <!-- Hero Left: Headline & Call to Action -->
+        <div class="hero-content">
+          <!-- Interactive Hero Category Tabs: Metal \ Construction \ Architecture -->
+          <div class="hero-categories-nav" id="heroCategoriesNav" role="tablist" aria-label="Hero Categories">
+            <button type="button" class="hero-cat-btn active" data-category="metal" role="tab" aria-selected="true">Metal</button>
+            <span class="cat-slash">\</span>
+            <button type="button" class="hero-cat-btn" data-category="construction" role="tab" aria-selected="false">Construction</button>
+            <span class="cat-slash">\</span>
+            <button type="button" class="hero-cat-btn" data-category="architecture" role="tab" aria-selected="false">Architecture</button>
+          </div>
+
+          <!-- Main Serif & Handwriting Headline -->
+          <h1 class="hero-headline">
+            <span class="hero-headline-first" id="heroH1">Building</span>
+            <span class="hero-headline-second" id="heroH2">Strength.</span>
+            <span class="hero-headline-script" id="heroScript">Shaping Tomorrow.</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-subtitle" id="heroSubtitle">
+            Reliable steel and metal solutions for modern construction.
+          </p>
+
+          <!-- Button -->
+          <a href="services.html" class="btn-outline-rhombus">
+            <span>Explore Our Services</span>
+            <span class="arrow-icon">→</span>
+          </a>
+        </div>
+
+        <!-- Hero Right: Arched Steel Image & Decorative Elements -->
+        <div class="hero-media-wrapper">
+          <!-- Floating Handwritten Badge: Quality Precision Durability -->
+          <div class="hero-handwritten-badge">
+            <span class="hero-badge-line" id="heroBadgeLine1">Quality</span>
+            <span class="hero-badge-line" id="heroBadgeLine2">Precision</span>
+            <span class="hero-badge-line" id="heroBadgeLine3">Durability</span>
+            <div class="hero-badge-underline"></div>
+          </div>
+
+          <!-- Iconic Cathedral Arch Mask Frame with HD Image -->
+          <div class="hero-image-frame">
+            <img src="/images/hero_metal.jpg" alt="Commercial steel frame construction by Rhombus Contractors" id="heroImage" loading="eager">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OUR SERVICES SECTION (Sliding Carousel with 7 Core Services)
+       ========================================================================== -->
+  <section class="services-section" id="services">
+    <div class="site-container">
+      <!-- Section Header Row with Sliding Controls -->
+      <div class="services-header-row">
+        <div>
+          <div class="section-tag">
+            <span>Our Services</span>
+          </div>
+          <h2 class="services-main-heading">
+            Your Vision,<br>
+            Our Expertise
+          </h2>
+        </div>
+        <div class="services-header-right">
+          <div class="services-description-block">
+            <p class="services-description-text">
+              We provide end-to-end metal and steel solutions with a focus on quality, safety and timely delivery.
+            </p>
+          </div>
+          <!-- Slider Navigation Arrows & Page Counter -->
+          <div class="services-slider-nav">
+            <span class="services-slide-counter" id="servicesCounter">01 / 07</span>
+            <div class="services-nav-buttons">
+              <button class="services-nav-btn" id="servicesPrevBtn" aria-label="Previous service slide">
+                ←
+              </button>
+              <button class="services-nav-btn" id="servicesNextBtn" aria-label="Next service slide">
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sliding Carousel Track for 7 Services -->
+      <div class="services-slider-wrapper">
+        <div class="services-slider-track" id="servicesTrack">
+          <!-- 01: Construction Material Supply -->
+          <div class="service-card" data-service-id="01" role="button" tabindex="0" aria-label="View Construction Material Supply details">
+            <div class="service-image-container">
+              <div class="shape-pebble-horizontal">
+                <img src="/images/service_1_hd.jpg" alt="Stacked construction steel pipes and rectangular tubes" loading="lazy">
+              </div>
+            </div>
+            <div class="service-number">01.</div>
+            <h3 class="service-title">Construction<br>Material Supply</h3>
+            <p class="service-body">
+              Quality construction materials for your building needs.
+            </p>
+            <div class="service-arrow-link">
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- 02: Fabrication & Installation of Metal Work -->
+          <div class="service-card" data-service-id="02" role="button" tabindex="0" aria-label="View Metal Fabrication details">
+            <div class="service-image-container">
+              <div class="shape-pill-vertical">
+                <img src="/images/service_2_hd.jpg" alt="Certified welder joining structural steel components" loading="lazy">
+              </div>
+            </div>
+            <div class="service-number">02</div>
+            <h3 class="service-title">Fabrication &<br>Installation of Metal Work</h3>
+            <p class="service-body">
+              Custom metal fabrication and precise installation with industry standards.
+            </p>
+            <div class="service-arrow-link">
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- 03: Powder Coating -->
+          <div class="service-card" data-service-id="03" role="button" tabindex="0" aria-label="View Powder Coating details">
+            <div class="service-image-container">
+              <div class="shape-circle">
+                <img src="/images/service_3_hd.jpg" alt="Powder-coated architectural vertical steel profiles" loading="lazy">
+              </div>
+            </div>
+            <div class="service-number">03</div>
+            <h3 class="service-title">Powder Coating</h3>
+            <p class="service-body">
+              Durable and high-quality powder coating for a lasting finish.
+            </p>
+            <div class="service-arrow-link">
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- 04: Sub Contracting in Construction -->
+          <div class="service-card" data-service-id="04" role="button" tabindex="0" aria-label="View Sub Contracting details">
+            <div class="service-image-container">
+              <div class="shape-asymmetric-wrapper">
+                <div class="shape-asymmetric-border"></div>
+                <div class="shape-asymmetric">
+                  <img src="/images/service_4_hd.jpg" alt="Large multistory commercial construction site" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="service-number">04</div>
+            <h3 class="service-title">Sub Contracting<br>in Construction</h3>
+            <p class="service-body">
+              Reliable sub contracting solutions for your construction projects.
+            </p>
+            <div class="service-arrow-link">
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- 05: Architectural Design & 3D Visualisation -->
+          <div class="service-card" data-service-id="05" role="button" tabindex="0" aria-label="View Architectural Design & 3D Visualisation details">
+            <div class="service-image-container">
+              <div class="shape-pebble-horizontal">
+                <img src="/images/service_5_hd.jpg" alt="Architectural design and 3D BIM visualization" loading="lazy">
+              </div>
+            </div>
+            <div class="service-number">05</div>
+            <h3 class="service-title">Architectural Design &<br>3D Visualisation</h3>
+            <p class="service-body">
+              Comprehensive BIM modeling, detailed structural drafting, and photorealistic 3D rendering.
+            </p>
+            <div class="service-arrow-link">
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- 06: Joinery and Interior Fitout -->
+          <div class="service-card" data-service-id="06" role="button" tabindex="0" aria-label="View Joinery and Interior Fitout details">
+            <div class="service-image-container">
+              <div class="shape-pill-vertical">
+                <img src="/images/service_6_hd.jpg" alt="Bespoke architectural joinery and interior fitout" loading="lazy">
+              </div>
+            </div>
+            <div class="service-number">06</div>
+            <h3 class="service-title">Joinery &<br>Interior Fitout</h3>
+            <p class="service-body">
+              Custom architectural woodwork, commercial metal-timber joinery, and turn-key interior fitouts.
+            </p>
+            <div class="service-arrow-link">
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- 07: Access and Temporary Works -->
+          <div class="service-card" data-service-id="07" role="button" tabindex="0" aria-label="View Access and Temporary Works details">
+            <div class="service-image-container">
+              <div class="shape-asymmetric-wrapper">
+                <div class="shape-asymmetric-border"></div>
+                <div class="shape-asymmetric">
+                  <img src="/images/service_7_hd.jpg" alt="Engineered construction scaffolding and temporary works" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="service-number">07</div>
+            <h3 class="service-title">Access &<br>Temporary Works</h3>
+            <p class="service-body">
+              Engineered scaffolding systems, temporary shoring, formwork, and safe site access solutions.
+            </p>
+            <div class="service-arrow-link">
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT RHOMBUS SECTION
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="site-container">
+      <div class="about-grid">
+        <!-- About Left: Asymmetrical Arch Mask & Script Accent -->
+        <div class="about-media-col">
+          <!-- Handwritten Badge: Trusted Partnerships Lasting Structures -->
+          <div class="about-handwritten-badge">
+            <span class="about-badge-text">Trusted</span>
+            <span class="about-badge-text">Partnerships</span>
+            <span class="about-badge-text">Lasting</span>
+            <span class="about-badge-text">Structures</span>
+            <div class="about-badge-underline"></div>
+          </div>
+
+          <div class="about-image-frame">
+            <img src="/images/about_hd.jpg" alt="Rhombus structural steel framework engineering" loading="lazy">
+          </div>
+        </div>
+
+        <!-- About Right: Content & Architectural Blueprint Line Art -->
+        <div class="about-content-col">
+          <div class="about-inner-layout">
+            <!-- Text Content -->
+            <div class="about-text-content">
+              <div class="section-tag">
+                <span>About Rhombus</span>
+                <span class="section-tag-line"></span>
+              </div>
+
+              <h2 class="about-heading">
+                Precision in Every<br>Structure.
+              </h2>
+
+              <p class="about-body-text">
+                At Rhombus Contractors, we specialize in delivering high-quality steel and metal solutions for the construction industry. With a commitment to excellence, safety and client satisfaction, we turn your vision into durable, long-lasting structures.
+              </p>
+
+              <button class="btn-outline-rhombus" id="learnMoreBtn">
+                <span>Learn More</span>
+                <span class="arrow-icon">→</span>
+              </button>
+            </div>
+
+            <!-- Architectural Blueprint Isometric Wireframe -->
+            <div class="about-wireframe-col" title="Rhombus 3D Engineering & Structural Detailing">
+              <img src="/images/blueprint-wireframe.svg" alt="Architectural structural steel blueprint wireframe" class="about-wireframe-img">
+              <div class="wireframe-accent-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHY CHOOSE US BAR
+       ========================================================================== -->
+  <section class="why-choose-section" id="certifications">
+    <div class="why-choose-bg-overlay"></div>
+    <div class="site-container">
+      <div class="why-choose-grid">
+        <!-- Left Title Block with Amber Accent Bar -->
+        <div class="why-choose-title-block">
+          <div class="why-choose-tag">Why Choose Us —</div>
+          <h2 class="why-choose-heading">
+            Experience.<br>
+            Quality. Trust.
+          </h2>
+        </div>
+
+        <!-- 4 Feature Highlight Blocks with Vertical Dividers -->
+        <div class="why-choose-features-grid">
+          <!-- 1: Safety First -->
+          <div class="why-feature-item">
+            <div class="feature-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="feature-label">
+              Safety<br>First
+            </div>
+          </div>
+
+          <!-- 2: Superior Workmanship -->
+          <div class="why-feature-item">
+            <div class="feature-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </div>
+            <div class="feature-label">
+              Superior<br>Workmanship
+            </div>
+          </div>
+
+          <!-- 3: On-Time Delivery -->
+          <div class="why-feature-item">
+            <div class="feature-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="feature-label">
+              On-Time<br>Delivery
+            </div>
+          </div>
+
+          <!-- 4: Long-Term Partnerships -->
+          <div class="why-feature-item">
+            <div class="feature-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4l-2.6-2.6a1 1 0 0 0-1.4 0l-1.3 1.3"/>
+                <path d="m13 7-2-2a1 1 0 0 0-1.4 0L5.3 9.3a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l1.3-1.3"/>
+                <path d="m2 14 6 6"/>
+                <path d="m22 10-6-6"/>
+              </svg>
+            </div>
+            <div class="feature-label">
+              Long-Term<br>Partnerships
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="site-container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div>
+          <div class="brand-link" style="padding: 0; margin-bottom: 0.75rem;">
+            <img src="/images/rhombus_logo_footer.png" alt="Rhombus Contractors" style="height: 44px; width: auto; display: block;">
+          </div>
+          <p class="footer-brand-desc">
+            Industry-leading steel fabrication, construction material distribution, and turnkey subcontracting for the built environment.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <button class="open-quote-modal" style="background: var(--color-crimson); color: white; border: none; padding: 0.65rem 1.4rem; font-weight: 700; font-size: 0.85rem; border-radius: 2px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.1em;">
+              Request a Bid
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#certifications" class="footer-link">Projects & Certs</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div>
+          <h4 class="footer-col-title">Core Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link">Construction Material Supply</a></li>
+            <li><a href="#services" class="footer-link">Metal Fabrication & Installation</a></li>
+            <li><a href="#services" class="footer-link">Powder Coating & Surface Finish</a></li>
+            <li><a href="#services" class="footer-link">Sub Contracting in Construction</a></li>
+            <li><a href="#services" class="footer-link">Architectural Design & 3D BIM</a></li>
+            <li><a href="#services" class="footer-link">Joinery & Interior Fitout</a></li>
+            <li><a href="#services" class="footer-link">Access & Temporary Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Coordinates -->
+        <div>
+          <h4 class="footer-col-title">Headquarters</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>742 Industrial Parkway, Steel Valley District, Suite 400</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+1 (800) 555-STEEL / (800) 555-7833</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>projects@rhombuscontractors.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Rhombus Contractors LLC. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Safety Standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS: SERVICE DETAIL MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeServiceModal" aria-label="Close Modal">&times;</button>
+      <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+        <span class="section-tag" id="serviceModalBadge" style="margin-bottom: 0;">Certified Supply</span>
+      </div>
+      <h2 class="services-main-heading" id="serviceModalTitle" style="font-size: 2.2rem; margin-bottom: 0.35rem;">Service Title</h2>
+      <p id="serviceModalSub" style="color: var(--color-amber); font-weight: 600; margin-bottom: 1.5rem; font-size: 0.95rem;">Subtitle</p>
+
+      <div style="border-radius: 4px; overflow: hidden; max-height: 220px; margin-bottom: 1.5rem; background: #e5e5e5;">
+        <img id="serviceModalImg" src="/images/service1_exact.jpg" alt="Service photo" style="width: 100%; height: 220px; object-fit: cover;">
+      </div>
+
+      <p id="serviceModalDesc" style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
+        Full technical description of the service and standards.
+      </p>
+
+      <h4 style="color: var(--color-navy); font-weight: 700; margin-bottom: 0.75rem;">Key Capabilities & Specifications</h4>
+      <ul id="serviceModalCaps" style="list-style: none; padding-left: 0; margin-bottom: 2rem;">
+        <!-- Injected via JavaScript -->
+      </ul>
+
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button class="open-quote-modal" style="background: var(--color-crimson); color: white; border: none; padding: 0.85rem 1.6rem; font-weight: 700; border-radius: 2px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.1em;">
+          Request a Quote for this Service
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODALS: ABOUT RHOMBUS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeAboutModal" aria-label="Close Modal">&times;</button>
+      <div class="section-tag">About Rhombus Contractors</div>
+      <h2 class="services-main-heading" id="aboutModalTitle" style="font-size: 2.2rem; margin-bottom: 1rem;">Precision in Every Structure</h2>
+      <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+        Founded on the principles of metallurgical integrity and steadfast construction schedules, Rhombus Contractors has grown from a specialized steel fabrication facility into a premier structural engineering and contracting partner.
+      </p>
+      <div style="background: var(--color-bg-alt); padding: 1.25rem; border-left: 3px solid var(--color-crimson); margin-bottom: 1.5rem;">
+        <h4 style="color: var(--color-navy); margin-bottom: 0.35rem; font-weight: 700;">Our Core Mission</h4>
+        <p style="color: var(--color-text-muted); font-size: 0.92rem;">
+          To empower developers, architects, and general contractors with uncompromising steel strength, master craftsmanship, and zero-compromise safety standards.
+        </p>
+      </div>
+      <h4 style="color: var(--color-navy); font-weight: 700; margin-bottom: 0.6rem;">Industry Certifications</h4>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1.75rem;">
+        <div style="background: white; border: 1px solid var(--color-border); padding: 0.75rem; border-radius: 2px; font-size: 0.88rem;">
+          <strong>AISC Certified:</strong> Building Fabricator & Advanced Steel Erector
+        </div>
+        <div style="background: white; border: 1px solid var(--color-border); padding: 0.75rem; border-radius: 2px; font-size: 0.88rem;">
+          <strong>AWS D1.1 / D1.5:</strong> Certified Structural Welding Inspectors
+        </div>
+        <div style="background: white; border: 1px solid var(--color-border); padding: 0.75rem; border-radius: 2px; font-size: 0.88rem;">
+          <strong>ISO 9001:2015:</strong> Total Quality Management System
+        </div>
+        <div style="background: white; border: 1px solid var(--color-border); padding: 0.75rem; border-radius: 2px; font-size: 0.88rem;">
+          <strong>OSHA 30:</strong> Site Safety Compliance &amp; EMR Rating &lt; 0.68
+        </div>
+      </div>
+      <button class="open-quote-modal" style="background: var(--color-navy); color: white; border: none; padding: 0.85rem 1.6rem; font-weight: 700; border-radius: 2px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.1em;">
+        Partner with Us
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODALS: REQUEST A QUOTE / BID MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeQuoteModal" aria-label="Close Modal">&times;</button>
+      <div class="section-tag">Project Estimation</div>
+      <h2 class="services-main-heading" id="quoteModalTitle" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Request a Project Quote</h2>
+      <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">
+        Provide your structural requirements or upload tender specifications. Our estimating team responds within 24 hours.
+      </p>
+
+      <div id="quoteSuccessNotice" style="display: none; background: #D1FAE5; border: 1.5px solid #10B981; padding: 1.5rem; border-radius: 4px; color: #065F46; text-align: center; margin-bottom: 1rem;">
+        <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Quote Request Submitted Successfully!</h4>
+        <p>Thank you for reaching out to Rhombus Contractors. Our chief estimator has received your details and will contact you promptly.</p>
+      </div>
+
+      <form id="quoteForm">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="modal-form-group">
+            <label class="modal-label" for="clientName">Full Name / Contact Person *</label>
+            <input type="text" id="clientName" class="modal-input" placeholder="e.g. John Doe" required>
+          </div>
+          <div class="modal-form-group">
+            <label class="modal-label" for="clientCompany">Company / General Contractor</label>
+            <input type="text" id="clientCompany" class="modal-input" placeholder="e.g. Apex Developments">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="modal-form-group">
+            <label class="modal-label" for="clientEmail">Email Address *</label>
+            <input type="email" id="clientEmail" class="modal-input" placeholder="john@apexbuild.com" required>
+          </div>
+          <div class="modal-form-group">
+            <label class="modal-label" for="clientPhone">Phone Number *</label>
+            <input type="tel" id="clientPhone" class="modal-input" placeholder="+1 (555) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="modal-form-group">
+          <label class="modal-label" for="serviceSelect">Service Category *</label>
+          <select id="serviceSelect" class="modal-select" required>
+            <option value="">Select a service category...</option>
+            <option value="material">01. Construction Material Supply</option>
+            <option value="fabrication">02. Fabrication & Installation of Metal Work</option>
+            <option value="powder">03. Powder Coating & Surface Treatment</option>
+            <option value="subcontracting">04. Turnkey Sub Contracting in Construction</option>
+            <option value="architectural">05. Architectural Design & 3D Visualisation</option>
+            <option value="joinery">06. Joinery & Interior Fitout</option>
+            <option value="access">07. Access & Temporary Works</option>
+            <option value="multiple">Multiple / Full Package Bid</option>
+          </select>
+        </div>
+
+        <div class="modal-form-group">
+          <label class="modal-label" for="projectScope">Project Scope & Estimated Tonnage</label>
+          <textarea id="projectScope" class="modal-textarea" rows="3" placeholder="Describe building type, steel specifications (e.g., A992 beams), timeline, and location..."></textarea>
+        </div>
+
+        <button type="submit" style="width: 100%; background: var(--color-crimson); color: white; border: none; padding: 0.95rem; font-weight: 700; font-size: 0.95rem; border-radius: 2px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.12em; transition: background 0.2s;">
+          Submit Quote Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Module -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
