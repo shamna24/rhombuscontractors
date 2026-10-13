@@ -9,7 +9,7 @@
   <!-- Google Fonts Preconnect & Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./src/style.css">
 </head>
@@ -23,7 +23,7 @@
       <!-- Brand Logo on Transparent Architectural Canvas -->
       <div class="header-logo-container">
         <a href="index.html" class="brand-link" aria-label="Rhombus Home">
-          <img src="/images/rhombus_logo.png" alt="Rhombus Contractors" class="brand-logo-img">
+          <img src="/images/rhombus_logo_transparent.png" alt="Rhombus Contractors" class="brand-logo-img">
         </a>
       </div>
 
@@ -127,7 +127,7 @@
             <div class="services-metric-track" aria-hidden="true">
               <span class="track-num">01</span>
               <div class="track-line"></div>
-              <span class="track-num">07</span>
+              <span class="track-num">04</span>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@
   </section>
 
   <!-- ==========================================================================
-       ALL 7 SERVICES - ALTERNATING DETAILED ARCHITECTURAL ROWS
+       ALL 4 CORE SERVICES - ALTERNATING DETAILED ARCHITECTURAL ROWS
        ========================================================================== -->
   <section class="services-catalog-section">
     <div class="site-container">
@@ -145,22 +145,24 @@
       <!-- SERVICE 01: Sub Contracting in Construction (Text Left, Image Right) -->
       <article class="service-detail-row" id="service-01">
         <div class="service-row-content">
-          <div class="service-watermark-number" aria-hidden="true">01</div>
-          <div class="service-meta-category">
-            <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M2 18h20M12 2a7 7 0 0 0-7 7c0 2.5 1 4 2 5h10c1-1 2-2.5 2-5a7 7 0 0 0-7-7z"/>
-              <path d="M12 2v7M9 14h6"/>
-            </svg>
-            <span>OUR SERVICES</span>
+          <div class="service-number-col">01</div>
+          <div class="service-info-col">
+            <div class="service-meta-category">
+              <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 18h20M12 2a7 7 0 0 0-7 7c0 2.5 1 4 2 5h10c1-1 2-2.5 2-5a7 7 0 0 0-7-7z"/>
+                <path d="M12 2v7M9 14h6"/>
+              </svg>
+              <span>OUR SERVICES</span>
+            </div>
+            <h2 class="service-row-title">Sub Contracting<br>in Construction</h2>
+            <p class="service-row-text">
+              We provide dependable sub contracting services for construction projects, delivering skilled manpower, quality work and timely execution.
+            </p>
+            <button type="button" class="service-learn-more-btn" data-service-id="01">
+              <span>LEARN MORE</span>
+              <span class="service-btn-arrow">→</span>
+            </button>
           </div>
-          <h2 class="service-row-title">Sub Contracting<br>in Construction</h2>
-          <p class="service-row-text">
-            We provide dependable sub contracting services for construction projects, delivering skilled manpower, quality work and timely execution.
-          </p>
-          <button type="button" class="service-learn-more-btn" data-service-id="01">
-            <span>LEARN MORE</span>
-            <span class="service-btn-arrow">→</span>
-          </button>
         </div>
 
         <div class="service-row-visual">
@@ -173,28 +175,30 @@
 
       <!-- SERVICE 02: Fabrication & Installation of Metal Work (Image Left, Text Right) -->
       <article class="service-detail-row reverse-row" id="service-02">
-        <div class="service-row-content">
-          <div class="service-watermark-number" aria-hidden="true">02</div>
-          <div class="service-meta-category">
-            <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-            </svg>
-            <span>OUR SERVICES</span>
-          </div>
-          <h2 class="service-row-title">Fabrication &<br>Installation of Metal Work</h2>
-          <p class="service-row-text">
-            From custom metal fabrication to precise installation, we deliver durable and high-quality metal work solutions for industrial and commercial projects.
-          </p>
-          <button type="button" class="service-learn-more-btn" data-service-id="02">
-            <span>LEARN MORE</span>
-            <span class="service-btn-arrow">→</span>
-          </button>
-        </div>
-
         <div class="service-row-visual">
           <div class="service-curved-img-card curve-top-left">
             <div class="curved-contour-trace"></div>
             <img src="/images/service_welder_hd.jpg" alt="Fabrication & Installation of Metal Work - Industrial steel welding" loading="lazy">
+          </div>
+        </div>
+
+        <div class="service-row-content">
+          <div class="service-number-col">02</div>
+          <div class="service-info-col">
+            <div class="service-meta-category">
+              <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+              <span>OUR SERVICES</span>
+            </div>
+            <h2 class="service-row-title">Fabrication &<br>Installation of Metal Work</h2>
+            <p class="service-row-text">
+              From custom metal fabrication to precise installation, we deliver durable and high-quality metal work solutions for industrial and commercial projects.
+            </p>
+            <button type="button" class="service-learn-more-btn" data-service-id="02">
+              <span>LEARN MORE</span>
+              <span class="service-btn-arrow">→</span>
+            </button>
           </div>
         </div>
       </article>
@@ -202,23 +206,25 @@
       <!-- SERVICE 03: Powder Coating (Text Left, Image Right) -->
       <article class="service-detail-row" id="service-03">
         <div class="service-row-content">
-          <div class="service-watermark-number" aria-hidden="true">03</div>
-          <div class="service-meta-category">
-            <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M19 11V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2z"/>
-              <path d="M6 13v7a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-7"/>
-              <path d="M15 7h2v2h-2z"/>
-            </svg>
-            <span>OUR SERVICES</span>
+          <div class="service-number-col">03</div>
+          <div class="service-info-col">
+            <div class="service-meta-category">
+              <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 11V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2z"/>
+                <path d="M6 13v7a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-7"/>
+                <path d="M15 7h2v2h-2z"/>
+              </svg>
+              <span>OUR SERVICES</span>
+            </div>
+            <h2 class="service-row-title">Powder Coating</h2>
+            <p class="service-row-text">
+              We offer professional powder coating services that enhance durability, provide superior finish and protect metal surfaces from corrosion and wear.
+            </p>
+            <button type="button" class="service-learn-more-btn" data-service-id="03">
+              <span>LEARN MORE</span>
+              <span class="service-btn-arrow">→</span>
+            </button>
           </div>
-          <h2 class="service-row-title">Powder Coating &<br>Surface Finish</h2>
-          <p class="service-row-text">
-            We offer professional powder coating services that enhance durability, provide superior finish and protect metal surfaces from corrosion and wear.
-          </p>
-          <button type="button" class="service-learn-more-btn" data-service-id="03">
-            <span>LEARN MORE</span>
-            <span class="service-btn-arrow">→</span>
-          </button>
         </div>
 
         <div class="service-row-visual">
@@ -231,24 +237,9 @@
 
       <!-- SERVICE 04: Construction Material Supply (Image Left, Text Right) -->
       <article class="service-detail-row reverse-row" id="service-04">
-        <div class="service-row-content">
-          <div class="service-watermark-number" aria-hidden="true">04</div>
-          <div class="service-meta-category">
-            <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-              <line x1="12" y1="22.08" x2="12" y2="12"/>
-            </svg>
-            <span>OUR SERVICES</span>
-          </div>
-          <h2 class="service-row-title">Construction<br>Material Supply</h2>
-          <p class="service-row-text">
-            We supply high-quality construction materials to meet your project requirements, ensuring reliability, consistency and on-time delivery.
-          </p>
-          <button type="button" class="service-learn-more-btn" data-service-id="04">
-            <span>LEARN MORE</span>
-            <span class="service-btn-arrow">→</span>
-          </button>
+        <!-- Blueprint Technical Architectural Wireframe in background -->
+        <div class="service-blueprint-backdrop" aria-hidden="true">
+          <img src="/images/blueprint-wireframe.svg" alt="">
         </div>
 
         <div class="service-row-visual">
@@ -257,93 +248,26 @@
             <img src="/images/service_pipes_hd.jpg" alt="Construction Material Supply - Certified structural steel tubes and pipes" loading="lazy">
           </div>
         </div>
-      </article>
 
-      <!-- SERVICE 05: Architectural Design & 3D Visualisation (Text Left, Image Right) -->
-      <article class="service-detail-row" id="service-05">
         <div class="service-row-content">
-          <div class="service-watermark-number" aria-hidden="true">05</div>
-          <div class="service-meta-category">
-            <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-              <polyline points="2 17 12 22 22 17"/>
-              <polyline points="2 12 12 17 22 12"/>
-            </svg>
-            <span>OUR SERVICES</span>
-          </div>
-          <h2 class="service-row-title">Architectural Design &<br>3D Visualisation</h2>
-          <p class="service-row-text">
-            Advanced BIM modeling, parametric 3D visualization, and structural clash detection to streamline fabrication and expedite project approvals.
-          </p>
-          <button type="button" class="service-learn-more-btn" data-service-id="05">
-            <span>LEARN MORE</span>
-            <span class="service-btn-arrow">→</span>
-          </button>
-        </div>
-
-        <div class="service-row-visual">
-          <div class="service-curved-img-card curve-top-left">
-            <div class="curved-contour-trace"></div>
-            <img src="/images/service_5_hd.jpg" alt="Architectural Design & 3D Visualisation - BIM rendering" loading="lazy">
-          </div>
-        </div>
-      </article>
-
-      <!-- SERVICE 06: Joinery and Interior Fitout (Image Left, Text Right) -->
-      <article class="service-detail-row reverse-row" id="service-06">
-        <div class="service-row-content">
-          <div class="service-watermark-number" aria-hidden="true">06</div>
-          <div class="service-meta-category">
-            <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-              <polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
-            <span>OUR SERVICES</span>
-          </div>
-          <h2 class="service-row-title">Joinery and<br>Interior Fitout</h2>
-          <p class="service-row-text">
-            Bespoke architectural joinery, custom millwork, luxury veneers, acoustic wall paneling, and turnkey commercial interior fitouts crafted to exact tolerances.
-          </p>
-          <button type="button" class="service-learn-more-btn" data-service-id="06">
-            <span>LEARN MORE</span>
-            <span class="service-btn-arrow">→</span>
-          </button>
-        </div>
-
-        <div class="service-row-visual">
-          <div class="service-curved-img-card curve-top-left">
-            <div class="curved-contour-trace"></div>
-            <img src="/images/service_6_hd.jpg" alt="Joinery and Interior Fitout - Architectural woodwork and luxury interior finish" loading="lazy">
-          </div>
-        </div>
-      </article>
-
-      <!-- SERVICE 07: Access and Temporary Works (Text Left, Image Right) -->
-      <article class="service-detail-row" id="service-07">
-        <div class="service-row-content">
-          <div class="service-watermark-number" aria-hidden="true">07</div>
-          <div class="service-meta-category">
-            <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="3" width="18" height="18" rx="2"/>
-              <line x1="3" y1="9" x2="21" y2="9"/>
-              <line x1="9" y1="21" x2="9" y2="9"/>
-            </svg>
-            <span>OUR SERVICES</span>
-          </div>
-          <h2 class="service-row-title">Access and<br>Temporary Works</h2>
-          <p class="service-row-text">
-            Engineered access scaffolding systems, heavy propping, facade access cradles, and safe temporary structural works engineered to global standards.
-          </p>
-          <button type="button" class="service-learn-more-btn" data-service-id="07">
-            <span>LEARN MORE</span>
-            <span class="service-btn-arrow">→</span>
-          </button>
-        </div>
-
-        <div class="service-row-visual">
-          <div class="service-curved-img-card curve-top-left">
-            <div class="curved-contour-trace"></div>
-            <img src="/images/service_7_hd.jpg" alt="Access and Temporary Works - Construction scaffolding infrastructure" loading="lazy">
+          <div class="service-number-col">04</div>
+          <div class="service-info-col">
+            <div class="service-meta-category">
+              <svg class="service-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+              <span>OUR SERVICES</span>
+            </div>
+            <h2 class="service-row-title">Construction<br>Material Supply</h2>
+            <p class="service-row-text">
+              We supply high-quality construction materials to meet your project requirements, ensuring reliability, consistency and on-time delivery.
+            </p>
+            <button type="button" class="service-learn-more-btn" data-service-id="04">
+              <span>LEARN MORE</span>
+              <span class="service-btn-arrow">→</span>
+            </button>
           </div>
         </div>
       </article>
@@ -459,13 +383,10 @@
         <div>
           <h4 class="footer-col-title">Core Services</h4>
           <ul class="footer-links-list">
-            <li><a href="#service-04" class="footer-link">Construction Material Supply</a></li>
-            <li><a href="#service-02" class="footer-link">Metal Fabrication & Installation</a></li>
-            <li><a href="#service-03" class="footer-link">Powder Coating & Surface Finish</a></li>
             <li><a href="#service-01" class="footer-link">Sub Contracting in Construction</a></li>
-            <li><a href="#service-05" class="footer-link">Architectural Design & 3D BIM</a></li>
-            <li><a href="#service-06" class="footer-link">Joinery & Interior Fitout</a></li>
-            <li><a href="#service-07" class="footer-link">Access & Temporary Works</a></li>
+            <li><a href="#service-02" class="footer-link">Fabrication & Installation</a></li>
+            <li><a href="#service-03" class="footer-link">Powder Coating</a></li>
+            <li><a href="#service-04" class="footer-link">Construction Material Supply</a></li>
           </ul>
         </div>
 
