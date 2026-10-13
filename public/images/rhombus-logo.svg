@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <!-- Rhombus Diamond Geometric Icon -->
+  <g transform="translate(4, 4)">
+    <!-- Outer tilted diamond red outline -->
+    <path d="M26 2 L50 26 L26 50 L2 26 Z" fill="none" stroke="#BA2826" stroke-width="4.5" stroke-linejoin="miter" stroke-miterlimit="10"/>
+    <!-- Inner solid dark navy diamond -->
+    <path d="M26 13 L39 26 L26 39 L13 26 Z" fill="#132B3F"/>
+    <!-- Central tiny diamond notch / negative space -->
+    <path d="M26 21 L31 26 L26 31 L21 26 Z" fill="#FAF8F3"/>
+  </g>
+
+  <!-- Typography -->
+  <!-- "RHOMBUS" in bold deep navy -->
+  <text x="68" y="27" font-family="'Plus Jakarta Sans', 'Cinzel', 'Outfit', sans-serif" font-weight="900" font-size="21" letter-spacing="0.08em" fill="#132B3F">RHOMBUS</text>
+  <!-- "CONTRACTORS" in red/crimson uppercase spaced -->
+  <text x="69" y="44" font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" font-weight="700" font-size="9" letter-spacing="0.32em" fill="#BA2826">CONTRACTORS</text>
+</svg>
