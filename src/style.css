@@ -119,8 +119,8 @@ body {
   display: flex;
   align-items: center;
   background-color: transparent;
-  padding-left: clamp(2rem, 3.5vw, 3.5rem);
-  padding-right: clamp(2rem, 3.5vw, 3.5rem);
+  padding-left: clamp(1.5rem, 2.8vw, 3rem);
+  padding-right: clamp(1.5rem, 2.8vw, 3rem);
   flex-shrink: 0;
   height: 100%;
 }
@@ -139,24 +139,27 @@ body {
   display: block;
 }
 
-/* Dark Navy Nav Bar: Clean, sleek dark navy extending across to the far right */
+/* Dark Navy Nav Bar: Evenly distributed navigation matching reference layout */
 .nav-bar-navy {
   flex: 1;
   background-color: var(--color-navy-nav);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: clamp(2.5rem, 4vw, 4.5rem);
-  padding-left: clamp(2rem, 3vw, 3rem);
+  justify-content: space-between;
+  padding-left: clamp(1.5rem, 3.5vw, 4.5rem);
+  padding-right: clamp(1.5rem, 3vw, 3.5rem);
   height: 100%;
-  gap: clamp(2.2rem, 3.5vw, 3.5rem);
+  gap: clamp(1.5rem, 2.5vw, 3rem);
 }
 
 .nav-links-list {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   list-style: none;
-  gap: clamp(1.8rem, 2.6vw, 2.8rem);
+  flex: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
