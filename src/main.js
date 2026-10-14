@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '01': {
       title: 'Construction Material Supply',
       subtitle: 'Structural Grade Steel & High-Strength Construction Materials',
-      image: '/images/service_1_hd.jpg',
+      image: '/images/service_pipes_hd.jpg',
       badge: 'Certified Mill Supply',
       description: 'Rhombus Contractors supplies a comprehensive inventory of primary construction and structural steel materials directly to commercial and industrial jobsites. All materials are certified to international standards (ASTM, EN, ISO) with full mill test reports.',
       capabilities: [
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '02': {
       title: 'Fabrication & Installation of Metal Work',
       subtitle: 'Turnkey Industrial & Architectural Metal Fabrication',
-      image: '/images/service_2_hd.jpg',
+      image: '/images/service_welder_hd.jpg',
       badge: 'AWS & AISC Certified',
       description: 'Our state-of-the-art 45,000 sq ft fabrication plant combines CNC precision cutting, robotic beam welding, and certified master fitters. From multi-tiered structural frames to custom architectural stairs and railings, our installation crews handle all on-site erection with rigorous safety.',
       capabilities: [
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '03': {
       title: 'Powder Coating & Surface Treatment',
       subtitle: 'Durable, High-Performance Industrial & Architectural Finishes',
-      image: '/images/service_3_hd.jpg',
+      image: '/images/service_powder_coating_hd.jpg',
       badge: 'Qualicoat Class 2 Standard',
       description: 'We operate automated conveyorized powder coating lines equipped with 7-stage chemical pre-treatment, shot blasting, and computer-controlled curing ovens. Our architectural-grade coatings deliver extreme UV resistance, corrosion protection, and pristine color consistency for decades.',
       capabilities: [
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '04': {
       title: 'Sub Contracting in Construction',
       subtitle: 'Integrated Structural Engineering & Site Execution Partner',
-      image: '/images/service_4_hd.jpg',
+      image: '/images/service_subcontracting_hd.jpg',
       badge: 'End-to-End Delivery',
       description: 'As a tier-one structural sub-contractor, Rhombus Contractors partners with general contractors and developers to deliver complex steel components on tight timelines. Our dedicated project managers integrate directly with your BIM modeling workflows to eliminate clash detection and reduce jobsite delays.',
       capabilities: [
