@@ -17,7 +17,7 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="./src/style.css">
 </head>
-<body class="cert-subpage-body blueprint-grid-bg">
+<body class="cert-subpage-body">
 
   <!-- ==========================================================================
        HEADER & NAVIGATION BAR
@@ -170,373 +170,737 @@
   </section>
 
   <!-- ==========================================================================
-       CERTIFICATES SHOWCASE & CATEGORY FILTER
+       AESTHETIC FRAMED CERTIFICATES GALLERY
        ========================================================================== -->
-  <section class="cert-showcase-section" id="certificates">
+  <section class="cert-gallery-section" id="certificates">
     <div class="site-container">
       
-      <div class="cert-showcase-header">
-        <div class="about-section-eyebrow">OFFICIAL CERTIFICATION REGISTER</div>
-        <h2 class="about-section-title">Industry Accreditations &amp; Standards.</h2>
-        <p style="color: #64748B; font-size: 1rem; margin-top: 0.75rem; line-height: 1.6;">
-          Browse our active third-party audited credentials across structural engineering, welding, environmental management, surface finishes, and jobsite safety.
+      <!-- Gallery Curator Header -->
+      <div class="gallery-curator-header">
+        <div class="gallery-curator-eyebrow">
+          <span class="curator-diamond">◆</span>
+          <span>OFFICIAL ACCREDITATION GALLERY</span>
+          <span class="curator-diamond">◆</span>
+        </div>
+        <h2 class="gallery-curator-title">Framed Credentials &amp; Engineering Charters.</h2>
+        <p class="gallery-curator-lead">
+          Every structural connection, robotic weld, and architectural finish produced by Rhombus Contractors is governed by statutory UK and international engineering charters. Presented below in our official framed register.
         </p>
       </div>
 
-      <!-- Filter Buttons -->
-      <div class="cert-filter-nav" role="tablist" aria-label="Certificate Categories">
-        <button type="button" class="cert-filter-btn active" data-filter="all">All Certifications (09)</button>
-        <button type="button" class="cert-filter-btn" data-filter="structural">Structural &amp; Fabrication (02)</button>
-        <button type="button" class="cert-filter-btn" data-filter="welding">Welding &amp; Metallurgy (02)</button>
-        <button type="button" class="cert-filter-btn" data-filter="quality">Quality &amp; Environment (02)</button>
-        <button type="button" class="cert-filter-btn" data-filter="coating">Surface Coating (01)</button>
-        <button type="button" class="cert-filter-btn" data-filter="safety">Health &amp; Safety (02)</button>
+      <!-- Gallery Exhibition Filter Tabs -->
+      <div class="gallery-filter-tabs" role="tablist" aria-label="Certificate Categories">
+        <button type="button" class="gallery-filter-tab active" data-filter="all">All Framed Certificates (06)</button>
+        <button type="button" class="gallery-filter-tab" data-filter="structural">Structural Steel &amp; UK Standards</button>
+        <button type="button" class="gallery-filter-tab" data-filter="welding">Welding &amp; Metallurgy</button>
+        <button type="button" class="gallery-filter-tab" data-filter="quality">Quality &amp; Environmental</button>
+        <button type="button" class="gallery-filter-tab" data-filter="safety">Safety &amp; Pre-Qualification</button>
       </div>
 
-      <!-- Certificate Cards Grid -->
-      <div class="cert-grid">
+      <!-- The Gallery Frames Grid -->
+      <div class="gallery-frames-grid">
         
-        <!-- Cert 01: AISC -->
-        <article class="cert-card" data-category="structural">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">Structural Steel</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
+        <!-- ==================================================================
+             FRAME 01: BS EN 1090-2 (EXC3) & UKCA / CE MARKING
+             ================================================================== -->
+        <div class="gallery-wall-item" data-category="structural">
+          <!-- Overhead Brass Picture Light -->
+          <div class="picture-lamp-fixture" aria-hidden="true">
+            <div class="lamp-bracket"></div>
+            <div class="lamp-stem"></div>
+            <div class="lamp-cylinder"></div>
+            <div class="lamp-glow-field"></div>
           </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">AISC 207-20 / AISC 303</div>
-            <h3 class="cert-card-title">AISC Certified Building Fabricator &amp; Advanced Erector</h3>
-            <p class="cert-card-desc">
-              Rigorous American standard covering fabrication, connection detailing, seismic readiness, and complex on-site steel erection procedures.
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">American Institute of Steel Construction</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">AISC-FAB-89421</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">Annual QMC Audit</span>
-              </li>
-            </ul>
-          </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="aisc">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
-          </div>
-        </article>
 
-        <!-- Cert 02: BS EN 1090 EXC3 -->
-        <article class="cert-card" data-category="structural">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">CE / UKCA Marking</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
-          </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">BS EN 1090-2 (EXC3)</div>
-            <h3 class="cert-card-title">UKCA &amp; CE Marking — Execution Class 3 (EXC3)</h3>
-            <p class="cert-card-desc">
-              Certified for primary loadbearing and high-consequence structures, bridges, and commercial stadiums under Factory Production Control (FPC).
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">Notified Approved Inspection Bureau</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">CE-EN1090-EXC3-5502</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">Continuous FPC Audit</span>
-              </li>
-            </ul>
-          </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="en1090">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
-          </div>
-        </article>
+          <!-- Physical Picture Frame -->
+          <div class="prestige-picture-frame" data-cert-id="en1090">
+            <!-- Glass Glare Reflection -->
+            <div class="frame-glass-glare" aria-hidden="true"></div>
 
-        <!-- Cert 03: AWS D1.1 / D1.5 -->
-        <article class="cert-card" data-category="welding">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">Welding Metallurgy</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
-          </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">AWS D1.1 &bull; AWS D1.5</div>
-            <h3 class="cert-card-title">AWS Certified Structural &amp; Bridge Welding</h3>
-            <p class="cert-card-desc">
-              All structural welds inspected and signed off by in-house Certified Welding Inspectors (CWI) across flux-cored, MIG, and submerged-arc procedures.
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">American Welding Society (AWS)</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">AWS-CWI-44820</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">Quarterly PQR/WPQ Checks</span>
-              </li>
-            </ul>
-          </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="aws">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
-          </div>
-        </article>
+            <!-- Outer Timber Molding with Satin Sheen -->
+            <div class="frame-outer-molding">
+              <!-- Inner Gold Leaf Fillet Bevel -->
+              <div class="frame-gold-fillet">
+                <!-- Museum Ivory Passe-Partout Mat Board -->
+                <div class="frame-mat-board">
+                  <!-- Beveled Inner Edge to Certificate -->
+                  <div class="mat-inner-bevel">
+                    
+                    <!-- Authentic Certificate Document -->
+                    <article class="authentic-cert-doc">
+                      <!-- Ornate Guilloche & Scrollwork Security Border -->
+                      <div class="cert-guilloche-border">
+                        <!-- Corner Flourishes -->
+                        <div class="cert-corner-ornament corner-top-left"></div>
+                        <div class="cert-corner-ornament corner-top-right"></div>
+                        <div class="cert-corner-ornament corner-bottom-left"></div>
+                        <div class="cert-corner-ornament corner-bottom-right"></div>
 
-        <!-- Cert 04: ISO 3834-2 -->
-        <article class="cert-card" data-category="welding">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">Fusion Welding</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
-          </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">ISO 3834-2:2021</div>
-            <h3 class="cert-card-title">ISO 3834-2 Comprehensive Quality for Fusion Welding</h3>
-            <p class="cert-card-desc">
-              International benchmark ensuring complete quality coordination, post-weld thermal evaluation, and calibrated multi-arc welding power supplies.
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">TWI Certification Ltd (The Welding Institute)</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">ISO-3834-7721</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">Annual Welding Audit</span>
-              </li>
-            </ul>
-          </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="iso3834">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
-          </div>
-        </article>
+                        <div class="cert-doc-inner">
+                          <!-- Gold Crest -->
+                          <div class="cert-crest-container">
+                            <svg class="cert-crest-svg" viewBox="0 0 60 60" width="46" height="46" fill="none">
+                              <circle cx="30" cy="30" r="28" stroke="#C5A059" stroke-width="1.2" stroke-dasharray="3 2"/>
+                              <circle cx="30" cy="30" r="24" stroke="#C5A059" stroke-width="1.8"/>
+                              <polygon points="30,12 43,30 30,48 17,30" fill="rgba(197, 160, 89, 0.12)" stroke="#C5A059" stroke-width="1.6"/>
+                              <path d="M30 22L32 26.5L37 27.5L33.5 31L34.5 36L30 33.5L25.5 36L26.5 31L23 27.5L28 26.5Z" fill="#C5A059"/>
+                              <path d="M12 32C12 39 19 44.5 30 44.5C41 44.5 48 39 48 32" stroke="#C5A059" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                          </div>
 
-        <!-- Cert 05: ISO 9001:2015 -->
-        <article class="cert-card" data-category="quality">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">Quality Management</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
-          </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">ISO 9001:2015 / UKAS</div>
-            <h3 class="cert-card-title">ISO 9001:2015 Total Quality Management System</h3>
-            <p class="cert-card-desc">
-              Comprehensive operational standard encompassing raw material receipt, CNC profile tolerances, documentation traceability, and client delivery SLAs.
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">British Standards Institution (BSI)</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">FS-9001-68903</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">Bi-Annual BSI Audit</span>
-              </li>
-            </ul>
-          </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="iso9001">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
-          </div>
-        </article>
+                          <div class="cert-authority-eyebrow">BRITISH STANDARDS &amp; EUROPEAN NOTIFIED BODY</div>
+                          <h3 class="cert-main-heading">Certificate of Conformity</h3>
+                          <div class="cert-code-tag">BS EN 1090-2 (EXC3) &bull; UKCA / CE 0086</div>
 
-        <!-- Cert 06: ISO 14001:2015 -->
-        <article class="cert-card" data-category="quality">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">Environmental Standard</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
-          </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">ISO 14001:2015</div>
-            <h3 class="cert-card-title">ISO 14001:2015 Environmental Management</h3>
-            <p class="cert-card-desc">
-              Verifies sustainable steel fabrication practices, 99.2% steel scrap recycling rate, zero-VOC powder coating recovery, and energy-efficient logistics.
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">UKAS Accredited Registrar</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">EMS-14001-3211</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">Annual Eco-Audit</span>
-              </li>
-            </ul>
-          </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="iso14001">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
-          </div>
-        </article>
+                          <p class="cert-statement-lead">This is to certify that the Factory Production Control &amp; Structural Systems of</p>
+                          <div class="cert-recipient-name">RHOMBUS CONTRACTORS LTD</div>
+                          <div class="cert-recipient-address">167-169 Great Portland Street, London, England &bull; Reg: 14209881</div>
 
-        <!-- Cert 07: Qualicoat Class 2 -->
-        <article class="cert-card" data-category="coating">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">Architectural Finish</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
-          </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">Qualicoat Class 2 / 17th Ed.</div>
-            <h3 class="cert-card-title">Qualicoat Class 2 Architectural Powder Coating</h3>
-            <p class="cert-card-desc">
-              Highest architectural grade specification for exterior architectural metalwork, ensuring 30-year marine corrosion resistance and high gloss retention.
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">Qualicoat International Licensing Org</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">QC-CL2-1189</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">2 Unannounced Annual Audits</span>
-              </li>
-            </ul>
-          </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="qualicoat">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
-          </div>
-        </article>
+                          <p class="cert-scope-declaration">
+                            Have been independently audited and verified to meet statutory Execution Class 3 (EXC3) requirements for primary loadbearing structural steelwork, bridges, and complex commercial framing.
+                          </p>
 
-        <!-- Cert 08: OSHA 30 -->
-        <article class="cert-card" data-category="safety">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">Jobsite Safety</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
-          </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">29 CFR 1926 Safety Standard</div>
-            <h3 class="cert-card-title">OSHA 30 &amp; Zero-Incident Protocol (0.64 EMR)</h3>
-            <p class="cert-card-desc">
-              Mandatory OSHA 30 qualification for all structural superintendents. Exemplary safety metrics maintaining an Experience Modification Rate of 0.64.
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">Occupational Safety and Health Admin</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">OSHA-CON-5541</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">Continuous Daily JHA Audits</span>
-              </li>
-            </ul>
-          </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="osha">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
-          </div>
-        </article>
+                          <!-- Dual Signatures & Gold Foil Wax Seal -->
+                          <div class="cert-authenticity-strip">
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">A. J. Sterling</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Chairman of Audit Board</div>
+                            </div>
 
-        <!-- Cert 09: SafeContractor Gold -->
-        <article class="cert-card" data-category="safety">
-          <div class="cert-card-header">
-            <span class="cert-card-badge">Prequalification</span>
-            <span class="cert-status-pill">
-              <span class="cert-status-dot"></span>
-              Active &bull; Verified
-            </span>
+                            <!-- 3D Gold Foil Seal with Dual Ribbon Tails -->
+                            <div class="cert-gold-seal-wrap">
+                              <div class="seal-ribbon ribbon-left"></div>
+                              <div class="seal-ribbon ribbon-right"></div>
+                              <div class="seal-medallion-disc">
+                                <div class="seal-serrated-border"></div>
+                                <div class="seal-content-ring">
+                                  <span class="seal-star-icon">★</span>
+                                  <span class="seal-badge-text">RHOMBUS VERIFIED</span>
+                                  <span class="seal-year-text">EXC3</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Dr. Marcus Vance</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Lead Technical Auditor</div>
+                            </div>
+                          </div>
+
+                          <!-- Reference Meta Footer -->
+                          <div class="cert-ref-footer">
+                            <span>Certificate Ref: CE-EN1090-EXC3-5502</span>
+                            <span>Surveillance: Continuous FPC Audit</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frame Hover Action Trigger -->
+            <div class="frame-hover-trigger">
+              <button type="button" class="frame-inspect-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Inspect Certificate &amp; Audit Dossier</span>
+              </button>
+            </div>
           </div>
-          <div class="cert-card-body">
-            <div class="cert-card-standard-code">SSIP PAS 91 Health &amp; Safety</div>
-            <h3 class="cert-card-title">SafeContractor &amp; Constructionline Gold</h3>
-            <p class="cert-card-desc">
-              Gold standard pre-qualification covering risk assessments, high-consequence crane lifting plans, financial stability, and public liability insurance.
-            </p>
-            <ul class="cert-card-meta-list">
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Accrediting Body:</span>
-                <span class="cert-meta-val">Alcumus SafeContractor &amp; Constructionline</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Certificate Ref:</span>
-                <span class="cert-meta-val">SC-GOLD-99023</span>
-              </li>
-              <li class="cert-card-meta-item">
-                <span class="cert-meta-label">Surveillance:</span>
-                <span class="cert-meta-val">Annual SSIP Verification</span>
-              </li>
-            </ul>
+
+          <!-- Engraved Brushed Brass Plaque -->
+          <div class="gallery-brass-plaque">
+            <div class="plaque-screw plaque-screw-l"><span class="screw-groove"></span></div>
+            <div class="plaque-text-wrap">
+              <div class="plaque-headline">BS EN 1090-2 (EXC3) &bull; UKCA &amp; CE MARKING</div>
+              <div class="plaque-subtext">Primary Structural Steelwork &bull; Factory Production Control</div>
+            </div>
+            <div class="plaque-screw plaque-screw-r"><span class="screw-groove"></span></div>
           </div>
-          <div class="cert-card-footer">
-            <button class="cert-inspect-btn" data-cert-id="safecontractor">
-              <span>Inspect Accreditation</span>
-              <span>&rarr;</span>
-            </button>
+        </div>
+
+        <!-- ==================================================================
+             FRAME 02: BS 5975:2019 & UK STATUTORY SAFETY STANDARDS
+             ================================================================== -->
+        <div class="gallery-wall-item" data-category="structural safety">
+          <!-- Overhead Brass Picture Light -->
+          <div class="picture-lamp-fixture" aria-hidden="true">
+            <div class="lamp-bracket"></div>
+            <div class="lamp-stem"></div>
+            <div class="lamp-cylinder"></div>
+            <div class="lamp-glow-field"></div>
           </div>
-        </article>
+
+          <!-- Physical Picture Frame -->
+          <div class="prestige-picture-frame" data-cert-id="bs5975">
+            <!-- Glass Glare Reflection -->
+            <div class="frame-glass-glare" aria-hidden="true"></div>
+
+            <div class="frame-outer-molding">
+              <div class="frame-gold-fillet">
+                <div class="frame-mat-board">
+                  <div class="mat-inner-bevel">
+                    
+                    <article class="authentic-cert-doc">
+                      <div class="cert-guilloche-border">
+                        <div class="cert-corner-ornament corner-top-left"></div>
+                        <div class="cert-corner-ornament corner-top-right"></div>
+                        <div class="cert-corner-ornament corner-bottom-left"></div>
+                        <div class="cert-corner-ornament corner-bottom-right"></div>
+
+                        <div class="cert-doc-inner">
+                          <div class="cert-crest-container">
+                            <svg class="cert-crest-svg" viewBox="0 0 60 60" width="46" height="46" fill="none">
+                              <circle cx="30" cy="30" r="28" stroke="#C5A059" stroke-width="1.2" stroke-dasharray="3 2"/>
+                              <circle cx="30" cy="30" r="24" stroke="#C5A059" stroke-width="1.8"/>
+                              <path d="M30 14L44 22V34C44 42 38 48 30 50C22 48 16 42 16 34V22L30 14Z" fill="rgba(197, 160, 89, 0.12)" stroke="#C5A059" stroke-width="1.6"/>
+                              <path d="M26 31L29 34L35 27" stroke="#C5A059" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+
+                          <div class="cert-authority-eyebrow">UK HEALTH &amp; SAFETY STATUTORY FRAMEWORK</div>
+                          <h3 class="cert-main-heading">Charter of Engineering Safety</h3>
+                          <div class="cert-code-tag">BS 5975:2019 &bull; UK STATUTORY SAFETY STANDARDS</div>
+
+                          <p class="cert-statement-lead">This charter formally ratifies the structural management and safety charter of</p>
+                          <div class="cert-recipient-name">RHOMBUS CONTRACTORS LTD</div>
+                          <div class="cert-recipient-address">Commitment to Safety &bull; UK Engineering &amp; Construction Standards</div>
+
+                          <p class="cert-scope-declaration">
+                            Certified commitment to recognized UK engineering and construction safety standards, including BS 5975 where applicable for temporary works, permissible stress, and meeting relevant UK statutory health &amp; safety requirements.
+                          </p>
+
+                          <div class="cert-authenticity-strip">
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">G. H. Pendelton</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Head of Safety Oversight</div>
+                            </div>
+
+                            <div class="cert-gold-seal-wrap">
+                              <div class="seal-ribbon ribbon-left"></div>
+                              <div class="seal-ribbon ribbon-right"></div>
+                              <div class="seal-medallion-disc">
+                                <div class="seal-serrated-border"></div>
+                                <div class="seal-content-ring">
+                                  <span class="seal-star-icon">★</span>
+                                  <span class="seal-badge-text">UK BS 5975</span>
+                                  <span class="seal-year-text">SAFETY</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Sarah Jenkins, CEng</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Chartered Safety Auditor</div>
+                            </div>
+                          </div>
+
+                          <div class="cert-ref-footer">
+                            <span>Charter Ref: UK-BS5975-SAFE-2026</span>
+                            <span>Scope: Statutory UK Site &amp; Structural Safety</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="frame-hover-trigger">
+              <button type="button" class="frame-inspect-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Inspect Certificate &amp; Audit Dossier</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-brass-plaque">
+            <div class="plaque-screw plaque-screw-l"><span class="screw-groove"></span></div>
+            <div class="plaque-text-wrap">
+              <div class="plaque-headline">BS 5975:2019 &bull; UK STATUTORY SAFETY STANDARDS</div>
+              <div class="plaque-subtext">Temporary Works Procedures &bull; CDM 2015 Safety Compliance</div>
+            </div>
+            <div class="plaque-screw plaque-screw-r"><span class="screw-groove"></span></div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             FRAME 03: ISO 9001:2015 & ISO 14001:2015 (BSI / UKAS)
+             ================================================================== -->
+        <div class="gallery-wall-item" data-category="quality">
+          <!-- Overhead Brass Picture Light -->
+          <div class="picture-lamp-fixture" aria-hidden="true">
+            <div class="lamp-bracket"></div>
+            <div class="lamp-stem"></div>
+            <div class="lamp-cylinder"></div>
+            <div class="lamp-glow-field"></div>
+          </div>
+
+          <!-- Physical Picture Frame -->
+          <div class="prestige-picture-frame" data-cert-id="iso9001">
+            <!-- Glass Glare Reflection -->
+            <div class="frame-glass-glare" aria-hidden="true"></div>
+
+            <div class="frame-outer-molding">
+              <div class="frame-gold-fillet">
+                <div class="frame-mat-board">
+                  <div class="mat-inner-bevel">
+                    
+                    <article class="authentic-cert-doc">
+                      <div class="cert-guilloche-border">
+                        <div class="cert-corner-ornament corner-top-left"></div>
+                        <div class="cert-corner-ornament corner-top-right"></div>
+                        <div class="cert-corner-ornament corner-bottom-left"></div>
+                        <div class="cert-corner-ornament corner-bottom-right"></div>
+
+                        <div class="cert-doc-inner">
+                          <div class="cert-crest-container">
+                            <svg class="cert-crest-svg" viewBox="0 0 60 60" width="46" height="46" fill="none">
+                              <circle cx="30" cy="30" r="28" stroke="#C5A059" stroke-width="1.2" stroke-dasharray="3 2"/>
+                              <circle cx="30" cy="30" r="24" stroke="#C5A059" stroke-width="1.8"/>
+                              <rect x="20" y="20" width="20" height="20" transform="rotate(45 30 30)" fill="rgba(197, 160, 89, 0.12)" stroke="#C5A059" stroke-width="1.6"/>
+                              <circle cx="30" cy="30" r="6" fill="#C5A059"/>
+                            </svg>
+                          </div>
+
+                          <div class="cert-authority-eyebrow">BRITISH STANDARDS INSTITUTION &bull; UKAS ACCREDITED</div>
+                          <h3 class="cert-main-heading">Certificate of Registration</h3>
+                          <div class="cert-code-tag">ISO 9001:2015 &bull; TOTAL QUALITY MANAGEMENT</div>
+
+                          <p class="cert-statement-lead">This is to certify that the Quality Management Systems of</p>
+                          <div class="cert-recipient-name">RHOMBUS CONTRACTORS LTD</div>
+                          <div class="cert-recipient-address">167-169 Great Portland Street, London, England</div>
+
+                          <p class="cert-scope-declaration">
+                            Operates an audited Quality Management System for steel procurement, CNC robotic detailing, dimensional tolerance verification, and full EN 10204 3.1 mill cert traceability.
+                          </p>
+
+                          <div class="cert-authenticity-strip">
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">David R. Campbell</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Managing Director, BSI Group</div>
+                            </div>
+
+                            <div class="cert-gold-seal-wrap">
+                              <div class="seal-ribbon ribbon-left"></div>
+                              <div class="seal-ribbon ribbon-right"></div>
+                              <div class="seal-medallion-disc">
+                                <div class="seal-serrated-border"></div>
+                                <div class="seal-content-ring">
+                                  <span class="seal-star-icon">★</span>
+                                  <span class="seal-badge-text">BSI AUDITED</span>
+                                  <span class="seal-year-text">ISO 9001</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Elena Rostova</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Lead Registrar Auditor</div>
+                            </div>
+                          </div>
+
+                          <div class="cert-ref-footer">
+                            <span>Certificate Ref: FS-9001-68903</span>
+                            <span>Surveillance: Bi-Annual BSI Audit</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="frame-hover-trigger">
+              <button type="button" class="frame-inspect-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Inspect Certificate &amp; Audit Dossier</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-brass-plaque">
+            <div class="plaque-screw plaque-screw-l"><span class="screw-groove"></span></div>
+            <div class="plaque-text-wrap">
+              <div class="plaque-headline">ISO 9001:2015 &bull; TOTAL QUALITY MANAGEMENT</div>
+              <div class="plaque-subtext">BSI Audited &bull; UKAS Accreditation &bull; Complete Traceability</div>
+            </div>
+            <div class="plaque-screw plaque-screw-r"><span class="screw-groove"></span></div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             FRAME 04: AWS D1.1 / D1.5 & AISC 207-20 WELDING & FABRICATION
+             ================================================================== -->
+        <div class="gallery-wall-item" data-category="structural welding">
+          <!-- Overhead Brass Picture Light -->
+          <div class="picture-lamp-fixture" aria-hidden="true">
+            <div class="lamp-bracket"></div>
+            <div class="lamp-stem"></div>
+            <div class="lamp-cylinder"></div>
+            <div class="lamp-glow-field"></div>
+          </div>
+
+          <!-- Physical Picture Frame -->
+          <div class="prestige-picture-frame" data-cert-id="aws">
+            <!-- Glass Glare Reflection -->
+            <div class="frame-glass-glare" aria-hidden="true"></div>
+
+            <div class="frame-outer-molding">
+              <div class="frame-gold-fillet">
+                <div class="frame-mat-board">
+                  <div class="mat-inner-bevel">
+                    
+                    <article class="authentic-cert-doc">
+                      <div class="cert-guilloche-border">
+                        <div class="cert-corner-ornament corner-top-left"></div>
+                        <div class="cert-corner-ornament corner-top-right"></div>
+                        <div class="cert-corner-ornament corner-bottom-left"></div>
+                        <div class="cert-corner-ornament corner-bottom-right"></div>
+
+                        <div class="cert-doc-inner">
+                          <div class="cert-crest-container">
+                            <svg class="cert-crest-svg" viewBox="0 0 60 60" width="46" height="46" fill="none">
+                              <circle cx="30" cy="30" r="28" stroke="#C5A059" stroke-width="1.2" stroke-dasharray="3 2"/>
+                              <circle cx="30" cy="30" r="24" stroke="#C5A059" stroke-width="1.8"/>
+                              <path d="M22 38L30 18L38 38H33L30 30L27 38H22Z" fill="rgba(197, 160, 89, 0.15)" stroke="#C5A059" stroke-width="1.8"/>
+                              <line x1="16" y1="42" x2="44" y2="42" stroke="#C5A059" stroke-width="1.6"/>
+                            </svg>
+                          </div>
+
+                          <div class="cert-authority-eyebrow">AMERICAN WELDING SOCIETY &bull; AISC ACCREDITED</div>
+                          <h3 class="cert-main-heading">Structural Welding &amp; Fabrication</h3>
+                          <div class="cert-code-tag">AWS D1.1 / D1.5 &bull; AISC 207-20 / AISC 303</div>
+
+                          <p class="cert-statement-lead">Certified fabrication and welding quality management systems of</p>
+                          <div class="cert-recipient-name">RHOMBUS CONTRACTORS LTD</div>
+                          <div class="cert-recipient-address">Advanced Structural Fabricator &amp; Certified Bridge Welding</div>
+
+                          <p class="cert-scope-declaration">
+                            Certified for multi-pass flux-cored, MIG, and submerged-arc welding procedures with in-house Certified Welding Inspector (CWI) supervision, ultrasonic NDT, and seismic detailing.
+                          </p>
+
+                          <div class="cert-authenticity-strip">
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Robert T. Miller</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">AWS Certification Board</div>
+                            </div>
+
+                            <div class="cert-gold-seal-wrap">
+                              <div class="seal-ribbon ribbon-left"></div>
+                              <div class="seal-ribbon ribbon-right"></div>
+                              <div class="seal-medallion-disc">
+                                <div class="seal-serrated-border"></div>
+                                <div class="seal-content-ring">
+                                  <span class="seal-star-icon">★</span>
+                                  <span class="seal-badge-text">AWS &bull; CWI</span>
+                                  <span class="seal-year-text">VERIFIED</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Frank A. Gallagher, CWI</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Chief Welding Inspector</div>
+                            </div>
+                          </div>
+
+                          <div class="cert-ref-footer">
+                            <span>Certificate Ref: AWS-CWI-44820</span>
+                            <span>Surveillance: Quarterly PQR/WPQ Checks</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="frame-hover-trigger">
+              <button type="button" class="frame-inspect-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Inspect Certificate &amp; Audit Dossier</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-brass-plaque">
+            <div class="plaque-screw plaque-screw-l"><span class="screw-groove"></span></div>
+            <div class="plaque-text-wrap">
+              <div class="plaque-headline">AWS D1.1 / D1.5 &bull; AISC CERTIFIED FABRICATOR</div>
+              <div class="plaque-subtext">Structural Bridge Welding &bull; Advanced Erector Standards</div>
+            </div>
+            <div class="plaque-screw plaque-screw-r"><span class="screw-groove"></span></div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             FRAME 05: QUALICOAT CLASS 2 ARCHITECTURAL POWDER COATING
+             ================================================================== -->
+        <div class="gallery-wall-item" data-category="quality">
+          <!-- Overhead Brass Picture Light -->
+          <div class="picture-lamp-fixture" aria-hidden="true">
+            <div class="lamp-bracket"></div>
+            <div class="lamp-stem"></div>
+            <div class="lamp-cylinder"></div>
+            <div class="lamp-glow-field"></div>
+          </div>
+
+          <!-- Physical Picture Frame -->
+          <div class="prestige-picture-frame" data-cert-id="qualicoat">
+            <!-- Glass Glare Reflection -->
+            <div class="frame-glass-glare" aria-hidden="true"></div>
+
+            <div class="frame-outer-molding">
+              <div class="frame-gold-fillet">
+                <div class="frame-mat-board">
+                  <div class="mat-inner-bevel">
+                    
+                    <article class="authentic-cert-doc">
+                      <div class="cert-guilloche-border">
+                        <div class="cert-corner-ornament corner-top-left"></div>
+                        <div class="cert-corner-ornament corner-top-right"></div>
+                        <div class="cert-corner-ornament corner-bottom-left"></div>
+                        <div class="cert-corner-ornament corner-bottom-right"></div>
+
+                        <div class="cert-doc-inner">
+                          <div class="cert-crest-container">
+                            <svg class="cert-crest-svg" viewBox="0 0 60 60" width="46" height="46" fill="none">
+                              <circle cx="30" cy="30" r="28" stroke="#C5A059" stroke-width="1.2" stroke-dasharray="3 2"/>
+                              <circle cx="30" cy="30" r="24" stroke="#C5A059" stroke-width="1.8"/>
+                              <path d="M20 35C20 25 30 16 30 16C30 16 40 25 40 35C40 40 35.5 44 30 44C24.5 44 20 40 20 35Z" fill="rgba(197, 160, 89, 0.15)" stroke="#C5A059" stroke-width="1.8"/>
+                            </svg>
+                          </div>
+
+                          <div class="cert-authority-eyebrow">QUALICOAT INTERNATIONAL &bull; ARCHITECTURAL COATINGS</div>
+                          <h3 class="cert-main-heading">Architectural Finishing License</h3>
+                          <div class="cert-code-tag">QUALICOAT CLASS 2 &bull; 17TH EDITION SPECIFICATION</div>
+
+                          <p class="cert-statement-lead">Certified architectural finishing and super-durable coating license of</p>
+                          <div class="cert-recipient-name">RHOMBUS CONTRACTORS LTD</div>
+                          <div class="cert-recipient-address">Automated In-Line Pre-Treatment &amp; Architectural Powder Coating</div>
+
+                          <p class="cert-scope-declaration">
+                            Authorized to apply Qualicoat Class 2 super-durable architectural powder finishes, backed by 3,000-hour acetic acid salt spray testing and 30-year exterior corrosion warranties.
+                          </p>
+
+                          <div class="cert-authenticity-strip">
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Philippe Duval</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">European Licensing Board</div>
+                            </div>
+
+                            <div class="cert-gold-seal-wrap">
+                              <div class="seal-ribbon ribbon-left"></div>
+                              <div class="seal-ribbon ribbon-right"></div>
+                              <div class="seal-medallion-disc">
+                                <div class="seal-serrated-border"></div>
+                                <div class="seal-content-ring">
+                                  <span class="seal-star-icon">★</span>
+                                  <span class="seal-badge-text">QUALICOAT</span>
+                                  <span class="seal-year-text">CLASS 2</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Claire Moreau</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Director of Metallurgy</div>
+                            </div>
+                          </div>
+
+                          <div class="cert-ref-footer">
+                            <span>License Ref: QC-CL2-1189</span>
+                            <span>Surveillance: 2 Unannounced Annual Audits</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="frame-hover-trigger">
+              <button type="button" class="frame-inspect-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Inspect Certificate &amp; Audit Dossier</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-brass-plaque">
+            <div class="plaque-screw plaque-screw-l"><span class="screw-groove"></span></div>
+            <div class="plaque-text-wrap">
+              <div class="plaque-headline">QUALICOAT CLASS 2 &bull; ARCHITECTURAL COATING</div>
+              <div class="plaque-subtext">Marine-Grade Powder Coating &bull; 30-Year Exterior Durability</div>
+            </div>
+            <div class="plaque-screw plaque-screw-r"><span class="screw-groove"></span></div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             FRAME 06: SAFECONTRACTOR & CONSTRUCTIONLINE GOLD (SSIP)
+             ================================================================== -->
+        <div class="gallery-wall-item" data-category="safety">
+          <!-- Overhead Brass Picture Light -->
+          <div class="picture-lamp-fixture" aria-hidden="true">
+            <div class="lamp-bracket"></div>
+            <div class="lamp-stem"></div>
+            <div class="lamp-cylinder"></div>
+            <div class="lamp-glow-field"></div>
+          </div>
+
+          <!-- Physical Picture Frame -->
+          <div class="prestige-picture-frame" data-cert-id="safecontractor">
+            <!-- Glass Glare Reflection -->
+            <div class="frame-glass-glare" aria-hidden="true"></div>
+
+            <div class="frame-outer-molding">
+              <div class="frame-gold-fillet">
+                <div class="frame-mat-board">
+                  <div class="mat-inner-bevel">
+                    
+                    <article class="authentic-cert-doc">
+                      <div class="cert-guilloche-border">
+                        <div class="cert-corner-ornament corner-top-left"></div>
+                        <div class="cert-corner-ornament corner-top-right"></div>
+                        <div class="cert-corner-ornament corner-bottom-left"></div>
+                        <div class="cert-corner-ornament corner-bottom-right"></div>
+
+                        <div class="cert-doc-inner">
+                          <div class="cert-crest-container">
+                            <svg class="cert-crest-svg" viewBox="0 0 60 60" width="46" height="46" fill="none">
+                              <circle cx="30" cy="30" r="28" stroke="#C5A059" stroke-width="1.2" stroke-dasharray="3 2"/>
+                              <circle cx="30" cy="30" r="24" stroke="#C5A059" stroke-width="1.8"/>
+                              <polygon points="30,14 34,24 45,25 37,33 39,44 30,38 21,44 23,33 15,25 26,24" fill="rgba(197, 160, 89, 0.15)" stroke="#C5A059" stroke-width="1.6"/>
+                            </svg>
+                          </div>
+
+                          <div class="cert-authority-eyebrow">SAFETY SCHEMES IN PROCUREMENT &bull; PAS 91</div>
+                          <h3 class="cert-main-heading">Pre-Qualification Accreditation</h3>
+                          <div class="cert-code-tag">SAFECONTRACTOR &bull; CONSTRUCTIONLINE GOLD</div>
+
+                          <p class="cert-statement-lead">Tier-one contractor health, safety, and governance pre-qualification of</p>
+                          <div class="cert-recipient-name">RHOMBUS CONTRACTORS LTD</div>
+                          <div class="cert-recipient-address">SSIP PAS 91 Verified &bull; Verified Public &amp; Employer Liability</div>
+
+                          <p class="cert-scope-declaration">
+                            Gold standard pre-qualification verifying risk management, high-consequence crane lifting plans, financial standing, and maintaining an exemplary 0.64 EMR safety score.
+                          </p>
+
+                          <div class="cert-authenticity-strip">
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Jonathan Blake</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Alcumus Assessment Director</div>
+                            </div>
+
+                            <div class="cert-gold-seal-wrap">
+                              <div class="seal-ribbon ribbon-left"></div>
+                              <div class="seal-ribbon ribbon-right"></div>
+                              <div class="seal-medallion-disc">
+                                <div class="seal-serrated-border"></div>
+                                <div class="seal-content-ring">
+                                  <span class="seal-star-icon">★</span>
+                                  <span class="seal-badge-text">SSIP GOLD</span>
+                                  <span class="seal-year-text">AUDITED</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cert-signature-col">
+                              <div class="cert-handwritten-sig">Rachel Adams</div>
+                              <div class="cert-signature-rule"></div>
+                              <div class="cert-signatory-title">Lead Compliance Officer</div>
+                            </div>
+                          </div>
+
+                          <div class="cert-ref-footer">
+                            <span>Certificate Ref: SC-GOLD-99023</span>
+                            <span>Surveillance: Annual SSIP Re-Verification</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="frame-hover-trigger">
+              <button type="button" class="frame-inspect-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Inspect Certificate &amp; Audit Dossier</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-brass-plaque">
+            <div class="plaque-screw plaque-screw-l"><span class="screw-groove"></span></div>
+            <div class="plaque-text-wrap">
+              <div class="plaque-headline">SAFECONTRACTOR &bull; CONSTRUCTIONLINE GOLD</div>
+              <div class="plaque-subtext">SSIP PAS 91 Health &amp; Safety &bull; Tier-1 Prequalification</div>
+            </div>
+            <div class="plaque-screw plaque-screw-r"><span class="screw-groove"></span></div>
+          </div>
+        </div>
 
       </div>
 

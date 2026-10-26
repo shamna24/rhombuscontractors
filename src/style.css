@@ -3151,207 +3151,599 @@ body {
 }
 
 /* ==========================================================================
-   FILTER TABS & CERTIFICATES SHOWCASE
+   AESTHETIC & ELEGANT FRAMED CERTIFICATES GALLERY
    ========================================================================== */
-.cert-showcase-section {
-  padding-top: clamp(3.5rem, 5vw, 5.5rem);
-  padding-bottom: clamp(4.5rem, 6vw, 6.5rem);
-  border-top: 1px solid var(--color-border);
+.cert-gallery-section {
+  padding-top: clamp(4.5rem, 6vw, 6.5rem);
+  padding-bottom: clamp(5.5rem, 7.5vw, 8rem);
+  background: radial-gradient(circle at 50% 12%, rgba(212, 175, 55, 0.09) 0%, transparent 55%), #0A0F17;
+  color: white;
   position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.cert-showcase-header {
+.gallery-curator-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 720px;
+  max-width: 820px;
   margin: 0 auto 3rem auto;
 }
 
-.cert-filter-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  justify-content: center;
-  margin-bottom: 3.5rem;
-}
-
-.cert-filter-btn {
-  font-family: var(--font-sans);
-  font-size: 0.84rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  padding: 0.65rem 1.25rem;
-  border-radius: 3px;
-  background: white;
-  border: 1px solid var(--color-border);
-  color: var(--color-navy);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.cert-filter-btn:hover {
-  border-color: var(--color-crimson);
-  color: var(--color-crimson);
-}
-
-.cert-filter-btn.active {
-  background: var(--color-navy);
-  border-color: var(--color-navy);
-  color: white;
-  box-shadow: 0 4px 14px rgba(17, 40, 59, 0.15);
-}
-
-/* Certificates Card Grid */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.cert-card {
-  background: white;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  transition: all var(--transition-smooth);
-  box-shadow: 0 4px 16px rgba(17, 40, 59, 0.04);
-}
-
-.cert-card:hover {
-  transform: translateY(-6px);
-  border-color: #CBD5E1;
-  box-shadow: 0 16px 36px -10px rgba(17, 40, 59, 0.12);
-}
-
-.cert-card-header {
-  padding: 1.5rem 1.75rem 1rem 1.75rem;
-  border-bottom: 1px solid var(--color-border-subtle);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cert-card-badge {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-crimson);
-  background: rgba(186, 40, 38, 0.08);
-  padding: 0.28rem 0.65rem;
-  border-radius: 2px;
-}
-
-.cert-status-pill {
+.gallery-curator-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: #065F46;
-  background: #D1FAE5;
-  padding: 0.25rem 0.6rem;
-  border-radius: 20px;
-}
-
-.cert-status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #10B981;
-}
-
-.cert-card-body {
-  padding: 1.5rem 1.75rem;
-  flex-grow: 1;
-}
-
-.cert-card-standard-code {
+  gap: 0.65rem;
   font-family: var(--font-sans);
   font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--color-amber);
-  margin-bottom: 0.4rem;
-}
-
-.cert-card-title {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--color-navy);
-  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-amber-light);
   margin-bottom: 0.85rem;
 }
 
-.cert-card-desc {
-  font-size: 0.92rem;
-  color: #5E6E7E;
-  line-height: 1.65;
-  margin-bottom: 1.25rem;
+.curator-diamond {
+  font-size: 0.65rem;
+  color: var(--color-amber);
 }
 
-.cert-card-meta-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid var(--color-border-subtle);
-  padding-top: 1rem;
+.gallery-curator-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 3.5vw, 3.3rem);
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
-.cert-card-meta-item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.82rem;
-  margin-bottom: 0.5rem;
-}
-
-.cert-card-meta-item:last-child {
-  margin-bottom: 0;
-}
-
-.cert-meta-label {
+.gallery-curator-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: #94A3B8;
-  font-weight: 500;
+  max-width: 740px;
+  margin: 0 auto;
 }
 
-.cert-meta-val {
-  color: var(--color-navy);
-  font-weight: 600;
+/* Gallery Exhibition Category Tabs */
+.gallery-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2.5rem auto 4.5rem auto;
 }
 
-.cert-card-footer {
-  padding: 1.15rem 1.75rem;
+.gallery-filter-tab {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.72rem 1.35rem;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #CBD5E1;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(6px);
+}
+
+.gallery-filter-tab:hover {
+  background: rgba(197, 160, 89, 0.12);
+  border-color: #C5A059;
+  color: #F3DF95;
+}
+
+.gallery-filter-tab.active {
+  background: linear-gradient(135deg, rgba(197, 160, 89, 0.25) 0%, rgba(140, 109, 45, 0.2) 100%);
+  border-color: #C5A059;
+  color: #F3DF95;
+  box-shadow: 0 4px 18px rgba(197, 160, 89, 0.22);
+}
+
+/* Gallery Wall Frames Grid */
+.gallery-frames-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 2.5rem;
+  align-items: start;
+}
+
+.gallery-wall-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Overhead Brass Picture Light Fixture */
+.picture-lamp-fixture {
+  width: 140px;
+  height: 30px;
+  position: relative;
+  margin-bottom: -5px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.lamp-bracket {
+  width: 22px;
+  height: 8px;
+  background: #5A4317;
+  margin: 0 auto;
+  border-radius: 2px 2px 0 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.lamp-stem {
+  width: 4px;
+  height: 10px;
+  background: linear-gradient(to right, #9E7D3B, #E2C275, #7D5E1F);
+  margin: 0 auto;
+}
+
+.lamp-cylinder {
+  width: 140px;
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #F3DF95 0%, #C5A059 45%, #7D5E1F 100%);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6), inset 0 1px 1px rgba(255,255,255,0.7);
+}
+
+.lamp-glow-field {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+  height: 95px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(243, 223, 149, 0.26) 0%, rgba(197, 160, 89, 0.1) 45%, transparent 75%);
+  pointer-events: none;
+}
+
+/* The Prestige Picture Frame */
+.prestige-picture-frame {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.frame-outer-molding {
+  padding: 15px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #251D17 0%, #14100E 40%, #2B231C 100%);
+  box-shadow: 
+    0 22px 50px -10px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    inset 0 2px 3px rgba(255, 255, 255, 0.14),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.65);
+}
+
+.frame-gold-fillet {
+  padding: 3px;
+  background: linear-gradient(135deg, #F3DF95 0%, #C5A059 45%, #8C6D2D 100%);
+  border-radius: 2px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.frame-mat-board {
   background: #FAF8F3;
-  border-top: 1px solid var(--color-border-subtle);
+  padding: 20px 18px;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.22), inset -1px -1px 2px rgba(255,255,255,0.8);
+}
+
+.mat-inner-bevel {
+  position: relative;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(197, 160, 89, 0.3), inset 2px 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Authentic Certificate Document Inside Frame */
+.authentic-cert-doc {
+  background: #FFFDF9;
+  border: 1px solid rgba(197, 160, 89, 0.38);
+  padding: 16px 14px 14px 14px;
+  position: relative;
+  color: #1E293B;
+  overflow: hidden;
+}
+
+.cert-guilloche-border {
+  border: 2px solid #C5A059;
+  outline: 1px dashed rgba(197, 160, 89, 0.6);
+  outline-offset: -5px;
+  padding: 16px 12px 12px 12px;
+  position: relative;
+}
+
+.cert-corner-ornament {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-color: #C5A059;
+  border-style: double;
+  border-width: 3px;
+  pointer-events: none;
+}
+
+.corner-top-left {
+  top: 3px;
+  left: 3px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner-top-right {
+  top: 3px;
+  right: 3px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.corner-bottom-left {
+  bottom: 3px;
+  left: 3px;
+  border-right: none;
+  border-top: none;
+}
+
+.corner-bottom-right {
+  bottom: 3px;
+  right: 3px;
+  border-left: none;
+  border-top: none;
+}
+
+.cert-doc-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cert-crest-container {
+  margin-bottom: 0.35rem;
+}
+
+.cert-authority-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8A6E32;
+  margin-bottom: 0.25rem;
+}
+
+.cert-main-heading {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #0F172A;
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+}
+
+.cert-code-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #11283B;
+  background: rgba(17, 40, 59, 0.08);
+  padding: 0.22rem 0.65rem;
+  border-radius: 2px;
+  margin-bottom: 0.65rem;
+}
+
+.cert-statement-lead {
+  font-size: 0.68rem;
+  color: #64748B;
+  font-style: italic;
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+}
+
+.cert-recipient-name {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #11283B;
+  line-height: 1.2;
+  margin-bottom: 0.15rem;
+}
+
+.cert-recipient-address {
+  font-size: 0.62rem;
+  color: #64748B;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
+}
+
+.cert-scope-declaration {
+  font-size: 0.72rem;
+  color: #475569;
+  line-height: 1.45;
+  margin-bottom: 0.85rem;
+  padding: 0 0.25rem;
+}
+
+/* Dual Signatures & Gold Foil Wax Seal */
+.cert-authenticity-strip {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+}
+
+.cert-signature-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cert-handwritten-sig {
+  font-family: 'Caveat', cursive;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1E3A8A;
+  line-height: 1;
+  transform: rotate(-2deg);
+}
+
+.cert-signature-rule {
+  height: 1px;
+  background: rgba(100, 116, 139, 0.35);
+  margin: 0.2rem auto;
+  width: 85%;
+}
+
+.cert-signatory-title {
+  font-size: 0.58rem;
+  color: #64748B;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+/* 3D Gold Foil Seal with Ribbons */
+.cert-gold-seal-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 56px;
+}
+
+.seal-ribbon {
+  position: absolute;
+  width: 11px;
+  height: 26px;
+  background: linear-gradient(180deg, #BA2826 0%, #7F1D1D 100%);
+  top: 24px;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+}
+
+.ribbon-left {
+  left: 14px;
+  transform: rotate(14deg);
+}
+
+.ribbon-right {
+  right: 14px;
+  transform: rotate(-14deg);
+}
+
+.seal-medallion-disc {
+  position: relative;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #FFF2B2, #D4AF37 40%, #9E7D3B 80%, #68501E 100%);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.35), inset 0 1px 1px rgba(255,255,255,0.8), inset 0 -1px 2px rgba(0,0,0,0.4);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.cert-inspect-btn {
-  background: none;
-  border: none;
-  color: var(--color-crimson);
-  font-size: 0.84rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+.seal-content-ring {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255,255,255,0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+}
+
+.seal-star-icon {
+  font-size: 0.44rem;
+  color: #3E2F0A;
+  line-height: 1;
+}
+
+.seal-badge-text {
+  font-size: 0.44rem;
+  font-weight: 800;
+  color: #3E2F0A;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  line-height: 1;
+}
+
+.seal-year-text {
+  font-size: 0.48rem;
+  font-weight: 800;
+  color: #3E2F0A;
+  line-height: 1;
+  margin-top: 1px;
+}
+
+/* Certificate Footer Reference */
+.cert-ref-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.58rem;
+  color: #94A3B8;
+  margin-top: 0.65rem;
+  border-top: 1px solid rgba(197, 160, 89, 0.25);
+  padding-top: 0.35rem;
+}
+
+/* Glass Reflection Overlay */
+.frame-glass-glare {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(130deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.05) 30%, transparent 50%, rgba(255,255,255,0.06) 80%, transparent 100%);
+  pointer-events: none;
+  z-index: 6;
+  border-radius: 4px;
+}
+
+/* Hover Action Trigger */
+.frame-hover-trigger {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 15, 23, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+}
+
+.prestige-picture-frame:hover {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.9), 0 0 30px rgba(197, 160, 89, 0.25);
+}
+
+.prestige-picture-frame:hover .frame-hover-trigger {
+  opacity: 1;
+}
+
+.frame-inspect-btn {
+  background: linear-gradient(135deg, #F3DF95, #C5A059);
+  color: #1E170A;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0;
-  transition: all var(--transition-fast);
+  gap: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: transform var(--transition-fast);
 }
 
-.cert-inspect-btn:hover {
-  color: var(--color-navy);
-  transform: translateX(4px);
+.frame-inspect-btn:hover {
+  transform: scale(1.04);
+}
+
+/* Engraved Brushed Brass Plaque */
+.gallery-brass-plaque {
+  width: 82%;
+  background: linear-gradient(180deg, #F3DF95 0%, #D8B763 35%, #BE963E 70%, #9E7828 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  padding: 0.55rem 0.85rem;
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.45), inset 0 1px 1px rgba(255,255,255,0.7), inset 0 -1px 2px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.plaque-screw {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #68501E;
+  position: relative;
+  flex-shrink: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.6);
+}
+
+.screw-groove {
+  position: absolute;
+  width: 6px;
+  height: 1.5px;
+  background: #C5A059;
+  top: 3.2px;
+  left: 1px;
+}
+
+.plaque-text-wrap {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.plaque-headline {
+  font-family: var(--font-serif);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #221808;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.35);
+  line-height: 1.2;
+}
+
+.plaque-subtext {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #473514;
+  text-transform: uppercase;
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 1100px) {
+  .gallery-frames-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .gallery-frames-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .gallery-filter-tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 /* ==========================================================================
