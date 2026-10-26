@@ -3895,150 +3895,448 @@ body {
 }
 
 /* ==========================================================================
-   COMMITMENT TO SAFETY & UK STANDARDS SECTION
+   PINTEREST-STYLE CLASSY & ELEGANT: COMMITMENT TO SAFETY & UK STANDARDS
    ========================================================================== */
-.about-safety-standards-section {
-  padding-top: clamp(4rem, 6vw, 6rem);
-  padding-bottom: clamp(4rem, 6vw, 6rem);
-  background: var(--color-bg-alt);
+.pinterest-safety-section {
+  padding-top: clamp(4.5rem, 6.5vw, 7rem);
+  padding-bottom: clamp(5rem, 7vw, 7.5rem);
+  background-color: #FAF8F5;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(197, 160, 89, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(17, 40, 59, 0.03) 0%, transparent 40%);
   position: relative;
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
 
-.safety-standards-card {
-  background: white;
-  border: 1px solid var(--color-border);
-  border-left: 5px solid var(--color-crimson);
-  border-radius: 6px;
-  padding: clamp(2.5rem, 5vw, 4rem);
+.pinterest-safety-layout {
   display: grid;
-  grid-template-columns: 1.35fr 0.85fr;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2.5rem, 4.5vw, 5rem);
   align-items: center;
-  gap: clamp(2rem, 4vw, 4rem);
-  box-shadow: 0 16px 40px -12px rgba(17, 40, 59, 0.08);
 }
 
-.safety-standards-title {
+/* Left Column: Editorial Content */
+.pinterest-safety-editorial {
+  display: flex;
+  flex-direction: column;
+}
+
+.pinterest-curator-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-crimson);
+  margin-bottom: 0.85rem;
+}
+
+.tag-gold-diamond {
+  color: var(--color-amber);
+  font-size: 0.65rem;
+}
+
+.pinterest-safety-heading {
   font-family: var(--font-serif);
-  font-size: clamp(2.2rem, 3.4vw, 3rem);
+  font-size: clamp(2.4rem, 3.8vw, 3.5rem);
   font-weight: 700;
   color: var(--color-navy);
-  line-height: 1.2;
-  margin-top: 0.6rem;
-  margin-bottom: 1.25rem;
+  line-height: 1.18;
+  margin-bottom: 0.85rem;
 }
 
-.safety-standards-text {
+.pinterest-italic-accent {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+}
+
+.pinterest-title-flourish {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.flourish-line {
+  width: 50px;
+  height: 1.5px;
+  background: linear-gradient(to right, var(--color-crimson), var(--color-amber));
+}
+
+.flourish-diamond {
+  font-size: 0.55rem;
+  color: var(--color-amber);
+}
+
+.pinterest-safety-manifesto {
   font-family: var(--font-sans);
-  font-size: clamp(1.05rem, 1.2vw, 1.18rem);
+  font-size: clamp(1.05rem, 1.25vw, 1.18rem);
   line-height: 1.85;
   color: #334155;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
-.safety-standards-badges {
+/* 3 Curated Architectural Pillar Cards */
+.pinterest-pillars-collection {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
-.safety-badge-item {
+.pinterest-pillar-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  background: #FFFDF9;
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  border-radius: 6px;
+  padding: 1.25rem 1.4rem;
+  box-shadow: 0 4px 16px rgba(17, 40, 59, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.pinterest-pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--color-crimson) 0%, var(--color-amber) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pinterest-pillar-card:hover {
+  transform: translateY(-3px) translateX(3px);
+  border-color: rgba(197, 160, 89, 0.6);
+  box-shadow: 0 12px 30px -8px rgba(17, 40, 59, 0.08);
+  background: white;
+}
+
+.pinterest-pillar-card:hover::before {
+  opacity: 1;
+}
+
+.pillar-card-aside {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  background: #FAF8F3;
-  border: 1px solid var(--color-border-subtle);
-  padding: 1rem 1.25rem;
-  border-radius: 4px;
-}
-
-.safety-badge-icon {
-  font-size: 1.35rem;
-  line-height: 1;
-  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
   margin-top: 2px;
 }
 
-.safety-badge-item strong {
-  display: block;
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
+.pillar-roman-numeral {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #C5A059;
+  letter-spacing: 0.05em;
+}
+
+.pillar-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(197, 160, 89, 0.1);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy);
+}
+
+.pillar-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
   font-weight: 700;
   color: var(--color-navy);
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+
+.pillar-card-desc {
+  font-size: 0.88rem;
+  color: #5E6E7E;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Right Column: Asymmetrical Pinterest Moodboard Visual Stack */
+.pinterest-safety-visual {
+  position: relative;
+  padding: 1.5rem 0 2.5rem 1.5rem;
+}
+
+.pinterest-arch-frame {
+  position: relative;
+  border-radius: 140px 140px 12px 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px -15px rgba(17, 40, 59, 0.22);
+  border: 4px solid white;
+  outline: 1px solid rgba(197, 160, 89, 0.35);
+  max-width: 420px;
+  margin-left: auto;
+}
+
+.pinterest-arch-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.pinterest-arch-frame:hover .pinterest-arch-img {
+  transform: scale(1.03);
+}
+
+.pinterest-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 40, 59, 0.05) 0%, rgba(17, 40, 59, 0.45) 100%);
+  pointer-events: none;
+}
+
+.pinterest-floating-pill {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(17, 40, 59, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(234, 160, 67, 0.45);
+  color: white;
+  padding: 0.4rem 1.1rem;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.pill-sparkle {
+  color: var(--color-amber-light);
+}
+
+/* Overlapping Curated Gilded Charter Plaque */
+.pinterest-charter-plaque {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  max-width: 360px;
+  background: linear-gradient(145deg, #101F2F 0%, #0A131C 100%);
+  border: 1.5px solid #C5A059;
+  border-radius: 6px;
+  padding: 1.75rem 1.6rem;
+  color: white;
+  box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  z-index: 3;
+}
+
+.plaque-corner-bracket {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: #C5A059;
+  border-style: solid;
+  border-width: 2px;
+  pointer-events: none;
+}
+
+.corner-tl {
+  top: 5px;
+  left: 5px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner-br {
+  bottom: 5px;
+  right: 5px;
+  border-left: none;
+  border-top: none;
+}
+
+.plaque-inner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.plaque-crest-wrap {
+  margin-bottom: 0.35rem;
+}
+
+.plaque-gold-eyebrow {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--color-amber-light);
+  text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
 
-.safety-badge-item p {
-  font-size: 0.86rem;
-  color: #64748B;
-  line-height: 1.45;
-  margin: 0;
-}
-
-.safety-standards-seal-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.safety-standards-seal-box {
-  background: var(--color-navy);
-  color: white;
-  padding: clamp(2rem, 3.5vw, 3rem) clamp(1.5rem, 2.5vw, 2.25rem);
-  border-radius: 6px;
-  text-align: center;
-  border: 2px solid rgba(234, 160, 67, 0.4);
-  box-shadow: 0 20px 45px -10px rgba(17, 40, 59, 0.25);
-  width: 100%;
-  max-width: 360px;
-}
-
-.safety-seal-emblem {
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  background: rgba(186, 40, 38, 0.2);
-  border: 2px solid var(--color-crimson);
-  color: #FAF8F3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.25rem auto;
-}
-
-.safety-seal-title {
+.plaque-main-title {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
 }
 
-.safety-seal-sub {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
+.plaque-code-pill {
+  display: inline-block;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--color-amber-light);
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+  color: var(--color-amber);
+  margin-bottom: 0.65rem;
 }
 
-.safety-seal-desc {
-  font-size: 0.85rem;
+.plaque-audit-statement {
+  font-size: 0.78rem;
   color: #94A3B8;
   line-height: 1.5;
-  margin: 0;
+  margin-bottom: 1.1rem;
 }
 
-@media (max-width: 900px) {
-  .safety-standards-card {
+/* Authentic Gilded 3D Wax Seal with Dual Ribbon Tails */
+.plaque-seal-composition {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+
+.plaque-ribbon {
+  position: absolute;
+  width: 10px;
+  height: 24px;
+  background: linear-gradient(180deg, #BA2826 0%, #7F1D1D 100%);
+  top: 20px;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+}
+
+.ribbon-l {
+  left: calc(50% - 11px);
+  transform: rotate(12deg);
+}
+
+.ribbon-r {
+  right: calc(50% - 11px);
+  transform: rotate(-12deg);
+}
+
+.plaque-wax-seal {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #F5DE8B, #D4AF37 45%, #8C6D2D 100%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wax-seal-inner {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wax-star {
+  font-size: 0.4rem;
+  color: #352507;
+  line-height: 1;
+}
+
+.wax-txt {
+  font-size: 0.44rem;
+  font-weight: 800;
+  color: #352507;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.wax-verified {
+  font-size: 0.4rem;
+  font-weight: 800;
+  color: #352507;
+  line-height: 1;
+  margin-top: 1px;
+}
+
+/* Handwritten Cursive Curator Signature */
+.plaque-curator-signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(197, 160, 89, 0.3);
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+.sig-cursive {
+  font-family: 'Caveat', cursive;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #F3DF95;
+  transform: rotate(-2deg);
+  line-height: 1.1;
+}
+
+.sig-title {
+  font-size: 0.6rem;
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+@media (max-width: 950px) {
+  .pinterest-safety-layout {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 3.5rem;
   }
-  .safety-standards-seal-box {
+  .pinterest-safety-visual {
+    padding-left: 0;
     max-width: 100%;
+  }
+  .pinterest-arch-frame {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .pinterest-charter-plaque {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1.5rem;
   }
 }
