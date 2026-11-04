@@ -301,47 +301,135 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. SERVICES SLIDER NAVIGATION LOGIC
-  const servicesTrack = document.getElementById('servicesTrack');
+  // 6. SERVICES SLIDER — SMOOTH SCROLL-SNAP + WHEEL-DRIVEN CAROUSEL
+  const servicesTrack   = document.getElementById('servicesTrack');
   const servicesPrevBtn = document.getElementById('servicesPrevBtn');
   const servicesNextBtn = document.getElementById('servicesNextBtn');
   const servicesCounter = document.getElementById('servicesCounter');
+  const servicesSection = document.getElementById('services');
 
-  if (servicesTrack && servicesPrevBtn && servicesNextBtn) {
+  if (servicesTrack && servicesPrevBtn && servicesNextBtn && servicesSection) {
+
+    // ── helpers ──────────────────────────────────────────────────────────────
     function getScrollStep() {
-      const card = servicesTrack.querySelector('.service-card');
+      const card  = servicesTrack.querySelector('.service-card');
       if (!card) return 320;
-      const style = window.getComputedStyle(servicesTrack);
-      const gap = parseFloat(style.gap) || 32;
+      const gap = parseFloat(window.getComputedStyle(servicesTrack).gap) || 32;
       return card.offsetWidth + gap;
     }
 
-    servicesNextBtn.addEventListener('click', () => {
+    function goNext() {
       const maxScroll = servicesTrack.scrollWidth - servicesTrack.clientWidth;
       if (servicesTrack.scrollLeft >= maxScroll - 10) {
         servicesTrack.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
         servicesTrack.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
       }
-    });
+    }
 
-    servicesPrevBtn.addEventListener('click', () => {
+    function goPrev() {
       if (servicesTrack.scrollLeft <= 10) {
         const maxScroll = servicesTrack.scrollWidth - servicesTrack.clientWidth;
         servicesTrack.scrollTo({ left: maxScroll, behavior: 'smooth' });
       } else {
         servicesTrack.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
       }
-    });
+    }
 
+    // ── button clicks ────────────────────────────────────────────────────────
+    servicesNextBtn.addEventListener('click', goNext);
+    servicesPrevBtn.addEventListener('click', goPrev);
+
+    // ── counter update ───────────────────────────────────────────────────────
     servicesTrack.addEventListener('scroll', () => {
       const step = getScrollStep();
-      const currentIndex = Math.min(Math.round(servicesTrack.scrollLeft / step) + 1, 7);
+      const idx  = Math.min(Math.round(servicesTrack.scrollLeft / step) + 1, 7);
       if (servicesCounter) {
-        servicesCounter.textContent = `0${currentIndex} / 07`;
+        servicesCounter.textContent = String(idx).padStart(2, '0') + ' / 07';
+      }
+    });
+
+    // ── State ─────────────────────────────────────────────────────────────────
+    let locked    = false;   // carousel owns vertical scroll
+    let animating = false;   // debounce between cards
+    let snapping  = false;   // snap animation in flight
+
+    function snapToSection() {
+      if (snapping) return;
+      snapping = true;
+      // Temporarily disable CSS smooth-scroll to avoid conflict
+      document.documentElement.style.scrollBehavior = 'auto';
+      servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setTimeout(() => {
+        document.documentElement.style.scrollBehavior = '';
+        snapping = false;
+        locked   = true;
+      }, 700);
+    }
+
+    // ── Single window wheel handler ───────────────────────────────────────────
+    window.addEventListener('wheel', (e) => {
+      const rect = servicesSection.getBoundingClientRect();
+      const vh   = window.innerHeight;
+
+      if (!locked) {
+        // Scrolling DOWN into the section (top edge is in lower half of viewport)
+        const enterDown = e.deltaY > 0 && rect.top > 0 && rect.top < vh * 0.65;
+        // Scrolling UP back into the section (bottom is still visible, top above viewport)
+        const enterUp   = e.deltaY < 0 && rect.top < 0 && rect.bottom > vh * 0.3;
+
+        if ((enterDown || enterUp) && !snapping) {
+          e.preventDefault();
+          if (enterDown) servicesTrack.scrollTo({ left: 0, behavior: 'instant' });
+          snapToSection();
+        }
+        return;
+      }
+
+      // Locked — drive carousel
+      const maxScroll = servicesTrack.scrollWidth - servicesTrack.clientWidth;
+      const atStart   = servicesTrack.scrollLeft <= 10;
+      const atEnd     = servicesTrack.scrollLeft >= maxScroll - 10;
+
+      if (e.deltaY > 0 && atEnd)   { locked = false; return; }
+      if (e.deltaY < 0 && atStart) { locked = false; return; }
+
+      e.preventDefault();
+      if (animating) return;
+      animating = true;
+
+      if (e.deltaY > 0) {
+        servicesTrack.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+      } else {
+        servicesTrack.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+      }
+      setTimeout(() => { animating = false; }, 500);
+    }, { passive: false });
+
+    // Safety release if section scrolls fully offscreen
+    window.addEventListener('scroll', () => {
+      if (!locked) return;
+      const r = servicesSection.getBoundingClientRect();
+      if (r.bottom < -50 || r.top > window.innerHeight + 50) locked = false;
+    }, { passive: true });
+
+    // Keyboard arrows
+    window.addEventListener('keydown', (e) => {
+      if (!locked) return;
+      const max = servicesTrack.scrollWidth - servicesTrack.clientWidth;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (servicesTrack.scrollLeft >= max - 10) { locked = false; return; }
+        servicesTrack.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (servicesTrack.scrollLeft <= 10) { locked = false; return; }
+        servicesTrack.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
       }
     });
   }
+
+
   // 7. SMOOTH SCROLL & ACTIVE NAV HIGHLIGHT
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id], header[id]');
