@@ -1,4 +1,3 @@
-import './floating-mail.js';
 // Services Subpage Interactive Behaviors & Service Modal
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Nav Drawer Toggle

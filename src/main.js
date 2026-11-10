@@ -1,4 +1,3 @@
-import './floating-mail.js';
 // ==========================================================================
 // RHOMBUS CONTRACTORS - INTERACTIVE LOGIC & CLIENT SHOWCASE
 document.addEventListener('DOMContentLoaded', () => {
