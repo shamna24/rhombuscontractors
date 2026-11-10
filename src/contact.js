@@ -1,3 +1,4 @@
+import './floating-mail.js';
 // Contact Subpage Interactive Behaviors
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Nav Drawer Toggle
