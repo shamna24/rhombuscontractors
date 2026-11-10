@@ -63,100 +63,100 @@ document.addEventListener('DOMContentLoaded', () => {
   const servicesData = {
     '01': {
       title: 'Construction Material Supply',
-      subtitle: 'Structural Grade Steel & High-Strength Construction Materials',
+      subtitle: 'High-Quality Steel & Reliable Building Materials',
       image: '/images/service_pipes_hd.jpg',
-      badge: 'Certified Mill Supply',
-      description: 'Rhombus Contractors supplies a comprehensive inventory of primary construction and structural steel materials directly to commercial and industrial jobsites. All materials are certified to international standards (ASTM, EN, ISO) with full mill test reports.',
+      badge: 'Fast & Reliable Supply',
+      description: 'We supply a full range of high-strength structural steel and construction materials directly to your site. From universal beams and hollow sections to rebar and heavy steel plates, we ensure timely delivery to keep your building project running on schedule.',
       capabilities: [
-        'Structural I-Beams, H-Columns, and Universal Channels (UC/UB)',
-        'Hot-Rolled & Cold-Formed Hollow Sections (RHS, SHS, CHS)',
-        'High-Yield Deformed Rebar & Wire Mesh Reinforcements',
-        'Heavy Gauge Steel Plates (Grades A36, A572, S275, S355)',
-        'Custom Cut-to-Length and Same-Day Logistics Scheduling'
+        'Structural I-Beams, Columns, and Steel Sections',
+        'Square, Rectangular, and Round Hollow Tubes',
+        'High-Strength Rebar & Mesh Reinforcements',
+        'Heavy Steel Plates Cut to Your Exact Project Sizes',
+        'Fast Dispatch and Flexible Jobsite Delivery Schedules'
       ]
     },
     '02': {
       title: 'Fabrication & Installation of Metal Work',
-      subtitle: 'Turnkey Industrial & Architectural Metal Fabrication',
+      subtitle: 'Custom Metal Fabrication & Expert On-Site Assembly',
       image: '/images/service_welder_hd.jpg',
-      badge: 'AWS & AISC Certified',
-      description: 'Our state-of-the-art 45,000 sq ft fabrication plant combines CNC precision cutting, robotic beam welding, and certified master fitters. From multi-tiered structural frames to custom architectural stairs and railings, our installation crews handle all on-site erection with rigorous safety.',
+      badge: 'Precision Metalwork',
+      description: 'From robust structural frameworks to custom architectural stairs and railings, our skilled team crafts bespoke metalwork tailored to your design. We manage the entire process from precision cutting and seamless welding to professional on-site installation with strict safety standards.',
       capabilities: [
-        'CNC 5-Axis Plasma, Laser & Oxy-Fuel Plate Cutting',
-        'Structural Steel Frameworks, Trusses, and Mezzanines',
-        'AWS D1.1 Certified Welded Structural Assemblies',
-        'Custom Architectural Canopies, Stairs, Guardrails, and Louvers',
-        'Mobile Crane Rigging & Site Erection Teams'
+        'High-Precision Laser, Plasma & Plate Cutting',
+        'Custom Structural Steel Frameworks, Trusses & Mezzanines',
+        'High-Quality Welding for Strong, Long-Lasting Structures',
+        'Architectural Canopies, Feature Stairs & Modern Railings',
+        'Complete On-Site Delivery, Crane Lifting & Assembly'
       ]
     },
     '03': {
       title: 'Powder Coating & Surface Treatment',
-      subtitle: 'Durable, High-Performance Industrial & Architectural Finishes',
+      subtitle: 'Durable, Weather-Resistant Architectural Finishes',
       image: '/images/service_powder_coating_hd.jpg',
-      badge: 'Qualicoat Class 2 Standard',
-      description: 'We operate automated conveyorized powder coating lines equipped with 7-stage chemical pre-treatment, shot blasting, and computer-controlled curing ovens. Our architectural-grade coatings deliver extreme UV resistance, corrosion protection, and pristine color consistency for decades.',
+      badge: 'Durable Finishes',
+      description: 'Protect your metalwork with a sleek, vibrant, and durable finish. Our modern powder coating process shields surfaces from rust, weather exposure, and daily wear, offering an extensive selection of colors and textures to complement any architectural style.',
       capabilities: [
-        'Architectural Super-Durable TGIC & Fluoropolymer Powders',
-        'Conveyor Line Handling Beams up to 42 Feet (12.8 Meters)',
-        'Automated 7-Stage Zinc-Phosphating & Chromate-Free Pre-treatment',
-        'Corrosion Resistance Testing (Up to 3,000 Hours Salt Spray)',
-        'Complete RAL & Custom Architectural Color Matching'
+        'Weather-Resistant Protective Coatings for Outdoor & Indoor Use',
+        'Thorough Surface Preparation & Anti-Corrosion Treatment',
+        'Large-Capacity Coating for Beams, Panels, and Railings',
+        'Extensive Palette of RAL Colors & Custom Architectural Matches',
+        'Matte, Satin, Gloss, and Textured Finish Options'
       ]
     },
     '04': {
       title: 'Sub Contracting in Construction',
-      subtitle: 'Integrated Structural Engineering & Site Execution Partner',
+      subtitle: 'Dependable Structural & Steel Subcontracting Partner',
       image: '/images/service_subcontracting_hd.jpg',
-      badge: 'End-to-End Delivery',
-      description: 'As a tier-one structural sub-contractor, Rhombus Contractors partners with general contractors and developers to deliver complex steel components on tight timelines. Our dedicated project managers integrate directly with your BIM modeling workflows to eliminate clash detection and reduce jobsite delays.',
+      badge: 'Trusted Project Partner',
+      description: 'We partner with general contractors, builders, and developers to take care of complex structural and metal packages. Our experienced team works seamlessly alongside your site managers to deliver top-tier craftsmanship, clear communication, and dependable milestone handovers.',
       capabilities: [
-        'Tekla & Revit 3D BIM Structural Modeling & Detailing',
-        'Turnkey Steel Subcontracting from Detailing to Handover',
-        'OSHA 30 Certified Site Safety Supervisions',
-        'Value Engineering & Material Optimization Solutions',
-        'Critical Path Schedule Acceleration'
+        'Turnkey Structural Steel & Metalwork Subcontracting',
+        'Dedicated Project Coordination for Smooth Site Operations',
+        'Skilled & Experienced Trades Focused on Quality and Safety',
+        'Cost-Effective Solutions to Keep Projects on Budget',
+        'Reliable Project Handovers Meeting Strict Timelines'
       ]
     },
     '05': {
       title: 'Architectural Design & 3D Visualisation',
-      subtitle: 'High-Precision BIM Detailing, Structural Modeling & Photorealistic Rendering',
+      subtitle: 'Photorealistic 3D Renders & Accurate Project Planning',
       image: '/images/service_5_hd.jpg',
-      badge: 'Revit & Tekla 3D Certified',
-      description: 'Rhombus Contractors bridges architectural concept and buildability through advanced 3D Building Information Modeling (BIM) and spatial visualization. We detect engineering clashes prior to fabrication, generate LOD 400 fabrication models, and provide immersive architectural renders for client stakeholder presentations.',
+      badge: 'Design & 3D Modeling',
+      description: 'Visualize your completed project with total clarity before construction starts. We create photorealistic 3D renders and detailed spatial models that help you explore design options, avoid costly site mistakes, and impress clients and stakeholders.',
       capabilities: [
-        'Level of Development (LOD) 300 - 400 Structural Modeling',
-        'Clash Detection & MEP Coordination in Navisworks',
-        'High-Resolution Photorealistic 3D Exterior & Interior Renderings',
-        'Fabrication Detailing & CNC Automated Export Files (DSTV/DXF)',
-        'Value Engineering & Material Schedule Generation'
+        'Stunning Photorealistic 3D Exterior & Interior Renderings',
+        'Detailed 3D Digital Models for Accurate Planning',
+        'Early Clash Detection to Prevent Costly On-Site Rework',
+        'Polished Visual Presentations for Client & Planning Approvals',
+        'Accurate Material Takeoffs and Clear Construction Drawings'
       ]
     },
     '06': {
       title: 'Joinery & Interior Fitout',
-      subtitle: 'Bespoke Commercial Joinery, Architectural Woodwork & Turnkey Fitout Execution',
+      subtitle: 'Bespoke Architectural Woodwork & Turnkey Interiors',
       image: '/images/service_6_hd.jpg',
-      badge: 'Mastercraft Millwork Standard',
-      description: 'Combining timber craftsmanship with precision metalwork, our interior fitout division delivers bespoke architectural joinery for high-end corporate headquarters, hospitality venues, and luxury residential developments. We handle everything from acoustic wall paneling to custom reception desks and feature ceilings.',
+      badge: 'Bespoke Interiors',
+      description: 'Blending natural timber craftsmanship with modern metal details, our interior team creates custom architectural woodwork for corporate offices, retail venues, and luxury homes. From statement reception desks to complete interior fitouts, we bring style and function to every space.',
       capabilities: [
-        'Custom Architectural Woodwork & Solid Surface Fabrication',
-        'Metal-Framed Glazed Partitions & Feature Ceilings',
-        'Turnkey Commercial Office & Hospitality Interior Fitouts',
-        'Class-A Fire-Rated Timber & Acoustic Wall Cladding',
-        'Integrated Lighting, Cabinetry & Luxury Reception Installations'
+        'Custom Architectural Cabinetry and Feature Woodwork',
+        'Modern Glass & Metal Partitions for Bright Open Spaces',
+        'Turnkey Commercial Office and Retail Fitouts',
+        'Acoustic Wall Paneling, Feature Ceilings & Premium Cladding',
+        'Custom Reception Counters and Tailored Interior Furniture'
       ]
     },
     '07': {
       title: 'Access & Temporary Works',
-      subtitle: 'Engineered Scaffolding, Heavy Shoring & Safe Jobsite Access Systems',
+      subtitle: 'Safe Scaffolding, Heavy Propping & Site Access Systems',
       image: '/images/service_7_hd.jpg',
-      badge: 'BS 5975 & OSHA Compliant',
-      description: 'Safe, compliant access is the backbone of every complex construction project. Rhombus Contractors designs, erects, and inspects engineered temporary works, including heavy-duty propping, façade scaffolding, birdcage access towers, and public protection gantries under strict safety certifications.',
+      badge: 'Safe Site Solutions',
+      description: 'We provide safe, sturdy scaffolding and temporary support systems tailored to your site requirements. Our dedicated team designs, erects, and inspects secure access platforms and protective walkways so your workforce can operate safely and efficiently at all heights.',
       capabilities: [
-        'TG20:21 Compliant System & Tube-and-Fitting Scaffolding',
-        'Heavy Structural Shoring, Facade Retention & Propping Systems',
-        'Cantilevered & Suspended Access Platforms',
-        'Site Loading Gantries & Pedestrian Protection Walkways',
-        'Dedicated Temporary Works Coordinators (TWC) & Weekly Audits'
+        'Modular System Scaffolding for Buildings of Any Scale',
+        'Heavy-Duty Structural Shoring & Temporary Wall Support',
+        'Secure Working Decks, Stair Towers & Public Gantries',
+        'Prompt Assembly and Safe Removal to Fit Your Schedule',
+        'Regular Site Safety Inspections for Complete Peace of Mind'
       ]
     }
   };
